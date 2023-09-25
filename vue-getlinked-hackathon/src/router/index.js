@@ -18,6 +18,11 @@ const router = createRouter({
       name: "register",
       component: () => import("../views/RegisterView.vue"),
     },
+    {
+      path: "/:catchAll(.*)",
+      name: "NotFound",
+      component: () => import("../views/NotFoundView.vue"),
+    },
   ],
 });
 

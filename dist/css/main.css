@@ -1,1 +1,15 @@
-/*# sourceMappingURL=main.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: #150e28;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}/*# sourceMappingURL=main.css.map */
