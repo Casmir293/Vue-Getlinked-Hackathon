@@ -2,7 +2,9 @@
   <!-- Header -->
   <transition name="menu-slide">
     <section v-show="isHomeHeader" class="home-header">
-      <div class="logo">get<span>linked</span></div>
+      <div class="logo">
+        <a href="#">get<span>linked</span></a>
+      </div>
 
       <!-- Burger Icon -->
       <div class="burger" @click="openMobileMenu">
@@ -20,8 +22,8 @@
         </svg>
       </div>
 
-      <!-- iPad Menu -->
-      <nav class="ipad-menu">
+      <!-- Laptop Menu -->
+      <nav class="laptop-menu">
         <ul>
           <li><a href="#timeline">Timeline</a></li>
           <li><a href="#overview">Overview</a></li>

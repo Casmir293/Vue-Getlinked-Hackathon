@@ -10,15 +10,19 @@
   left: 0;
 
   .logo {
-    font-family: $header-font;
-    font-size: 32px;
-    font-weight: 700;
-    span {
-      color: $light-purple;
+    a {
+      font-family: $header-font;
+      font-size: 32px;
+      font-weight: 700;
+      text-decoration: none;
+      color: #fff;
+      span {
+        color: $light-purple;
+      }
     }
   }
 
-  .ipad-menu {
+  .laptop-menu {
     display: none;
   }
 }
@@ -88,7 +92,7 @@
 // Transition
 .menu-slide-enter-active,
 .menu-slide-leave-active {
-  transition: transform 1s ease, opacity 1s ease;
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 .menu-slide-enter-from,
@@ -103,14 +107,14 @@
   transform: translateY(0);
 }
 
-// Media Query for iPad
-@media only screen and (min-width: 576px) {
+// Media Query for Laptop
+@media only screen and (min-width: 992px) {
   .home-header {
     .burger {
       display: none;
     }
 
-    .ipad-menu {
+    .laptop-menu {
       display: flex;
       ul {
         padding: 0px 50px;
@@ -121,7 +125,6 @@
           font-family: $body-font;
           list-style: none;
           padding: 0 48px;
-          width: 160px;
           a {
             color: #fff;
             text-decoration: none;
@@ -130,7 +133,7 @@
             cursor: pointer;
             &:hover {
               color: $light-purple;
-              font-size: 20px;
+              font-weight: 900px;
               transition: 0.5s;
             }
           }
