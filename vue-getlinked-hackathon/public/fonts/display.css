@@ -8,3 +8,8 @@
   font-family: "Montserrat";
   src: url(../fonts/Montserrat-Regular.ttf) format("truetype");
 }
+
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter-Regular.ttf) format("truetype");
+}
