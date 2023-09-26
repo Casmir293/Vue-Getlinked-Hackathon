@@ -1,7 +1,11 @@
 <template>
-  <div></div>
+  <header>
+    <header-nav />
+  </header>
 </template>
 
-<script setup></script>
+<script setup>
+import HeaderNav from "../components/HeaderNav.vue";
+</script>
 
-<style lang="scss" scoped></style>
+<style lang="scss"></style>

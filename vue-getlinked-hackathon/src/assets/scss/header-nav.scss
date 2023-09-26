@@ -1,0 +1,63 @@
+.home-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  border-bottom: 0.5px solid #808080;
+  .logo {
+    font-family: $header-font;
+    font-size: 32px;
+    font-weight: 700;
+    span {
+      color: $light-purple;
+    }
+  }
+}
+
+.mobile-menu {
+  height: 492px;
+  border-radius: 8px;
+  border: 0.5px solid rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(30px);
+  .svg-container {
+    position: relative;
+    float: right;
+    top: 35px;
+    right: 35px;
+  }
+
+  .inner-svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  ul {
+    margin-top: 120px;
+    li {
+      list-style: none;
+      margin-bottom: 15px;
+      a {
+        text-decoration: none;
+        color: #fff;
+        letter-spacing: -1px;
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .register-btn {
+    border-radius: 4px;
+    width: 172px;
+    height: 53px;
+    background: $gradient;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 32px;
+    margin-top: 30px;
+  }
+}
