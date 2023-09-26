@@ -1,8 +1,10 @@
 <template>
   <!-- Header -->
-  <transition name="mobile-menu-slide">
+  <transition name="menu-slide">
     <section v-show="isHomeHeader" class="home-header">
       <div class="logo">get<span>linked</span></div>
+
+      <!-- Burger Icon -->
       <div class="burger" @click="openMobileMenu">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -17,12 +19,25 @@
           />
         </svg>
       </div>
+
+      <!-- iPad Menu -->
+      <nav class="ipad-menu">
+        <ul>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#faq">FAQs</a></li>
+          <li><router-link to="/contact">Contact</router-link></li>
+        </ul>
+        <div class="register-btn">
+          <router-link to="/register">Register</router-link>
+        </div>
+      </nav>
     </section>
   </transition>
 
   <!-- Mobile Menu -->
-  <transition name="mobile-menu-slide">
-    <section v-show="isMobileMenu" @click="closeMobileMenu" class="mobile-menu">
+  <transition name="menu-slide">
+    <nav v-show="isMobileMenu" @click="closeMobileMenu" class="mobile-menu">
       <div class="svg-container">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -72,11 +87,10 @@
         <li><a href="#faq">FAQs</a></li>
         <li><router-link to="/contact">Contact</router-link></li>
       </ul>
-
       <div class="register-btn">
         <router-link to="/register">Register</router-link>
       </div>
-    </section>
+    </nav>
   </transition>
 </template>
 

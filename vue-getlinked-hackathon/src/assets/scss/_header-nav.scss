@@ -8,6 +8,7 @@
   top: 0;
   right: 0;
   left: 0;
+
   .logo {
     font-family: $header-font;
     font-size: 32px;
@@ -15,6 +16,10 @@
     span {
       color: $light-purple;
     }
+  }
+
+  .ipad-menu {
+    display: none;
   }
 }
 
@@ -59,48 +64,87 @@
       }
     }
   }
+}
 
-  .register-btn {
-    border-radius: 4px;
-    width: 172px;
-    height: 53px;
-    background: $gradient;
+.register-btn {
+  border-radius: 4px;
+  width: 172px;
+  height: 53px;
+  background: $gradient;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-left: 32px;
+  margin-top: 30px;
+  a {
+    background-color: inherit;
     font-size: 16px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    margin-left: 32px;
-    margin-top: 30px;
-    a {
-      background-color: inherit;
-      font-size: 16px;
-      color: #fff;
-      text-decoration: none;
-    }
+    color: #fff;
+    text-decoration: none;
   }
 }
 
 // Transition
-.home-header-slide-enter-active,
-.home-header-slide-leave-active,
-.mobile-menu-slide-enter-active,
-.mobile-menu-slide-leave-active {
+.menu-slide-enter-active,
+.menu-slide-leave-active {
   transition: transform 1s ease, opacity 1s ease;
 }
 
-.mobile-menu-slide-enter-active,
-.mobile-menu-slide-leave-active {
-  transition: transform 1s ease, opacity 1s ease;
-}
-
-.mobile-menu-slide-enter-from,
-.mobile-menu-slide-leave-to {
+.menu-slide-enter-from,
+.menu-slide-leave-to {
   opacity: 0;
   transform: translateY(-100%);
 }
 
-.mobile-menu-slide-to,
-.mobile-menu-slide-from {
+.menu-slide-to,
+.menu-slide-from {
   opacity: 1;
   transform: translateY(0);
+}
+
+// Media Query for iPad
+@media only screen and (min-width: 576px) {
+  .home-header {
+    .burger {
+      display: none;
+    }
+
+    .ipad-menu {
+      display: flex;
+      ul {
+        padding: 0px 50px;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        li {
+          font-family: $body-font;
+          list-style: none;
+          padding: 0 48px;
+          width: 160px;
+          a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: 0.5s;
+            cursor: pointer;
+            &:hover {
+              color: $light-purple;
+              font-size: 20px;
+              transition: 0.5s;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .register-btn {
+    margin-top: 0px;
+    transition: 0.5s;
+    &:hover {
+      transform: scale(1.2);
+      transition: 0.5s;
+    }
+  }
 }
