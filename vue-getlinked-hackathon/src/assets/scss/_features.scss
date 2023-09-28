@@ -1,0 +1,52 @@
+.features {
+  padding: 32px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .igniting {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+    .igniting-left {
+      display: flex;
+    }
+  }
+
+  .getlinked {
+    font-family: $header-font;
+    font-size: 32px;
+    font-weight: 700;
+    .tech {
+      display: inline-block;
+      .idea {
+        width: 18px;
+        height: 26px;
+      }
+    }
+  }
+
+  .hackathon {
+    font-family: $header-font;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 16px 0;
+    span {
+      color: $light-purple;
+    }
+    img {
+      width: 22.119px;
+      height: 22.119px;
+      display: inline;
+    }
+  }
+
+  p {
+    line-height: 21.58px;
+  }
+}
