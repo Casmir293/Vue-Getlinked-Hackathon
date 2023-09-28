@@ -26,6 +26,18 @@
 
     <div class="main-feat">
       <div class="main-feat-left">
+        <img
+          class="background-img"
+          src="/public/imgs/purple-1.png"
+          alt="background-img"
+        />
+        <img
+          class="star star-1"
+          src="/public/imgs/big-white-star.png"
+          alt="star"
+        />
+        <img class="star star-2" src="/public/imgs/star.png" alt="star" />
+        <img class="star star-3" src="/public/imgs/star.png" alt="star" />
         <div class="getlinked">
           getlinked Te<span class="tech">
             <img class="idea" src="/public/imgs/idea.png" alt="idea" />
@@ -47,20 +59,46 @@
           <router-link to="/register">Register</router-link>
         </div>
         <div class="time">
-          <span>00</span> <span class="time-parameter">H</span> <span>00</span>
-          <span class="time-parameter">M</span> <span>00</span>
+          <span>{{ twoDigit(hour) }}</span
+          ><span class="time-parameter">H</span> &nbsp;
+          <span>{{ twoDigit(min) }}</span>
+          <span class="time-parameter">M</span> &nbsp;
+          <span>{{ twoDigit(sec) }}</span>
           <span class="time-parameter">S</span>
         </div>
       </div>
       <div class="main-feat-right">
-        <div class="boy-img"><img src="" alt="young-boy" /></div>
-        <div class="animate-img"><img src="" alt="object" /></div>
+        <img class="boy-img" src="/public/imgs/smart-boy.png" alt="young-boy" />
+        <img class="animate-img" src="/public/imgs/lights.png" alt="object" />
       </div>
     </div>
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref, onMounted } from "vue";
+
+const hour = ref(0);
+const min = ref(0);
+const sec = ref(0);
+
+const twoDigit = (value) => {
+  return value < 10 ? `0${value}` : `${value}`;
+};
+
+const updateTime = () => {
+  const now = new Date();
+  hour.value = now.getHours();
+  min.value = now.getMinutes();
+  sec.value = now.getSeconds();
+};
+
+updateTime();
+
+onMounted(() => {
+  setInterval(updateTime, 1000);
+});
+</script>
 
 <style lang="scss" scoped>
 @import "../assets/scss/variables";

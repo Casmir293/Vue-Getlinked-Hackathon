@@ -8,6 +8,7 @@
   top: 0;
   right: 0;
   left: 0;
+  z-index: 10;
 
   .logo {
     a {
@@ -30,6 +31,7 @@
 .mobile-menu {
   height: 492px;
   border-radius: 8px;
+  z-index: 10;
   position: fixed;
   top: 0;
   right: 0;
@@ -79,7 +81,6 @@
   width: 172px;
   height: 53px;
   background: $gradient;
-  font-size: 16px;
   justify-content: center;
   align-items: center;
   display: flex;
