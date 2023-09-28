@@ -30,6 +30,10 @@
 .mobile-menu {
   height: 492px;
   border-radius: 8px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   border: 0.5px solid rgba(255, 255, 255, 0.04);
   @supports (-webkit-backdrop-filter: blur(30px)) or
     (backdrop-filter: blur(30px)) {
@@ -110,6 +114,7 @@
 // Media Query for Laptop
 @media only screen and (min-width: 992px) {
   .home-header {
+    padding: 48px 160px 16px 160px;
     .burger {
       display: none;
     }

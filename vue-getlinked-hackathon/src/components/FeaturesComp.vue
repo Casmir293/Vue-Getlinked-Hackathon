@@ -1,5 +1,5 @@
 <template>
-  <section class="features"></section>
+  <section class="features">hello word</section>
 </template>
 
 <script setup></script>
