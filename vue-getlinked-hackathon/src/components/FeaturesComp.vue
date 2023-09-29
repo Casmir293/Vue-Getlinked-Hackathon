@@ -40,8 +40,7 @@
         <img class="star star-3" src="/public/imgs/star.png" alt="star" />
         <div class="getlinked">
           getlinked Te<span class="tech">
-            <img class="idea" src="/public/imgs/idea.png" alt="idea" />
-            c </span
+            <img class="idea" src="/public/imgs/idea.png" alt="idea" />c</span
           >h
         </div>
         <div class="hackathon">
@@ -67,7 +66,13 @@
           <span class="time-parameter">S</span>
         </div>
       </div>
+
       <div class="main-feat-right">
+        <img
+          class="background-img"
+          src="/public/imgs/purple-1.png"
+          alt="background-img"
+        />
         <img class="boy-img" src="/public/imgs/smart-boy.png" alt="young-boy" />
         <img class="animate-img" src="/public/imgs/lights.png" alt="object" />
       </div>

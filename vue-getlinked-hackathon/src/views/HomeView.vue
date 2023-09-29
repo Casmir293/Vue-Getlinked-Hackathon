@@ -4,7 +4,9 @@
   </header>
 
   <main>
-    <features />
+    <transition name="slide-down-fade" appear>
+      <features />
+    </transition>
   </main>
 
   <footer></footer>
@@ -18,6 +20,15 @@ import Features from "../components/FeaturesComp.vue";
 <style lang="scss">
 main {
   margin-top: 80.5px;
+}
+
+// Transition
+.slide-down-fade-enter-from {
+  opacity: 0;
+  transform: translateY(100%);
+}
+.slide-down-fade-enter-active {
+  transition: all 2.5s ease;
 }
 
 // Media Query for Laptop

@@ -51,7 +51,7 @@
   // stars- end
 
   .igniting {
-    font-size: 15px;
+    font-size: 16px;
     font-style: italic;
     font-weight: 700;
     display: flex;
@@ -130,7 +130,6 @@
   }
 
   .main-feat-right {
-    // background: url(/img/purple-lens.png), no-repeat;
     border-bottom: 1px solid #ffffff2e;
     position: relative;
     img {
@@ -175,14 +174,148 @@
   }
 }
 
+// Media Query for Ipad
+@media only screen and (min-width: 576px) {
+  .features {
+    text-align: left;
+    display: block;
+
+    .background-img {
+      top: -130px;
+      left: -20px;
+    }
+
+    .igniting {
+      justify-content: flex-end;
+      margin-right: 80px;
+      .igniting-right {
+        margin-left: 3px;
+      }
+    }
+
+    .main-feat {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      .main-feat-left {
+        border-bottom: 1px solid #ffffff2e;
+        padding-left: 80px;
+      }
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .register-btn {
+      margin: 16px 0;
+    }
+
+    .time {
+      margin: 16px 0px 0px 0px;
+    }
+
+    .main-feat-right {
+      .background-img {
+        top: -70px;
+        left: -5px;
+      }
+    }
+  }
+}
+
 // Media Query for Laptop
 @media only screen and (min-width: 992px) {
-  .register-btn {
-    margin-top: 0px;
-    transition: 0.5s;
-    &:hover {
-      transform: scale(1.2);
+  .features {
+    .star {
+      width: 26px;
+    }
+
+    .star-1 {
+      top: -30px;
+      left: 150px;
+    }
+
+    .star-2 {
+      top: 20px;
+      left: 800px;
+    }
+
+    .star-3 {
+      top: 450px;
+      left: 600px;
+    }
+
+    .igniting {
+      font-size: 36px;
+      justify-content: flex-end;
+      margin-right: 80px;
+      .bottom {
+        display: flex;
+        justify-content: center;
+      }
+      .igniting-right {
+        margin-left: 6px;
+      }
+    }
+
+    .main-feat {
+      .main-feat-left {
+        padding-left: 100px;
+      }
+    }
+
+    .getlinked {
+      font-size: 80px;
+      .tech {
+        background: transparent;
+        .idea {
+          width: 53px;
+          height: 73px;
+          background: transparent;
+        }
+      }
+    }
+
+    .hackathon {
+      font-size: 80px;
+      margin: 16px 0;
+      span {
+        background: transparent;
+      }
+      img {
+        width: 86px;
+        height: 86px;
+        background: transparent;
+      }
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 33.2px;
+      width: 552px;
+      position: relative;
+      background-color: transparent;
+      margin-bottom: 16px;
+    }
+
+    .register-btn {
+      width: 172px;
+      height: 53px;
+      margin-top: 0px;
       transition: 0.5s;
+      a {
+        font-size: 16px;
+      }
+      &:hover {
+        transform: scale(1.2);
+        transition: 0.5s;
+      }
+    }
+
+    .time {
+      font-size: 64px;
+      line-height: 85.12px;
+      padding: 64px 0;
     }
   }
 }
