@@ -1,0 +1,271 @@
+.details {
+  text-align: center;
+  img {
+    padding: 0rem 2rem;
+  }
+
+  .register-btn {
+    font-size: 0.75rem;
+    border-radius: 4px;
+    width: 96.35px;
+    height: 31.346px;
+    background: $gradient;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 16px auto;
+    a {
+      background-color: inherit;
+      font-size: 12px;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+
+.detail-flex {
+  border-bottom: 1px solid grey;
+  padding-bottom: 1rem;
+
+  div {
+    p {
+      padding: 0rem 2rem 1rem 2rem;
+    }
+  }
+}
+
+.subtopic {
+  font-family: $header-font;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 133%;
+  margin-bottom: 0;
+  background-color: transparent;
+  span {
+    color: $light-purple;
+    display: block;
+    background-color: transparent;
+  }
+}
+
+.subtopic-1 {
+  margin-top: 32px;
+}
+
+.detail-img-3 {
+  margin-top: 2rem;
+}
+
+.lady-img {
+  z-index: 1;
+  background-color: transparent;
+}
+
+.write-ups {
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71875rem;
+  background-color: transparent;
+  z-index: 1;
+  p {
+    font-size: 0.75rem;
+    background-color: transparent;
+    z-index: 1;
+    position: relative;
+  }
+  b {
+    color: #ff26b9;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    position: relative;
+    background-color: transparent;
+    z-index: 1;
+  }
+}
+
+.content-2 {
+  background-color: transparent;
+  z-index: 1;
+}
+
+.detail-flex-1 {
+  padding: 3rem 0;
+  position: relative;
+}
+
+.detail-flex-2 {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  .background-img {
+    background-color: transparent;
+    position: absolute;
+    top: -120px;
+    left: -100px;
+    opacity: 0.3;
+    width: 100%;
+    height: 70%;
+  }
+  .background-img-2 {
+    background-color: transparent;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    opacity: 0.3;
+    width: 100%;
+    height: 70%;
+  }
+}
+
+.detail-flex-3 {
+  position: relative;
+  .background-img {
+    background-color: transparent;
+    position: absolute;
+    top: -120px;
+    left: -100px;
+    opacity: 0.3;
+    width: 100%;
+    height: 70%;
+  }
+  .background-img-2 {
+    background-color: transparent;
+    position: absolute;
+    top: 480px;
+    left: 150px;
+    opacity: 0.3;
+    width: 100%;
+    height: 70%;
+  }
+}
+
+// stars- start
+.star {
+  width: 75px;
+  height: auto;
+  position: absolute;
+  background-color: transparent;
+}
+
+.star-1 {
+  top: 180px;
+  left: 0px;
+  animation: blink 2s infinite;
+}
+
+.star-2 {
+  top: 520px;
+  left: 350px;
+  animation: blink 3s infinite;
+}
+
+.star-3 {
+  top: 150px;
+  left: 0px;
+  animation: blink 2s infinite;
+}
+
+.star-4 {
+  top: 400px;
+  left: 350px;
+  animation: blink 3s infinite;
+}
+
+.star-5 {
+  top: 630px;
+  left: 50px;
+  animation: blink 2s infinite;
+}
+
+.star-6 {
+  top: -15px;
+  left: 150px;
+  animation: blink 0.5s infinite;
+}
+
+.star-7 {
+  top: 150px;
+  left: 180px;
+  animation: blink 3s infinite;
+}
+
+.star-8 {
+  top: 1120px;
+  left: 300px;
+  animation: blink 2s infinite;
+}
+
+// stars- end
+
+.arrow {
+  width: 100px;
+  height: auto;
+  transform: rotate(-70.92deg);
+  background-color: transparent;
+  display: flex;
+  margin: auto;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+// Media Query for Ipad
+@media only screen and (min-width: 576px) {
+  .detail-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+    align-items: center;
+  }
+
+  .details {
+    text-align: left;
+  }
+
+  .detail-flex-2 {
+    padding: 32px 0;
+  }
+
+  .judging {
+    padding-top: 32px;
+  }
+}
+
+//Media Query for Laptops
+@media (min-width: 992px) {
+  .detail-flex {
+    padding: 0rem 100px;
+  }
+
+  .subtopic {
+    font-size: 2rem;
+  }
+
+  .write-ups {
+    font-size: 0.875rem;
+  }
+
+  .details {
+    text-align: left;
+  }
+
+  .detail-flex-1 {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+  }
+
+  .detail-flex-3 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid grey;
+  }
+}
