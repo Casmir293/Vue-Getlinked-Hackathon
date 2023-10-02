@@ -224,12 +224,38 @@
     align-items: center;
   }
 
+  .arrow {
+    display: none;
+  }
+
   .details {
     text-align: left;
   }
 
   .detail-flex-2 {
     padding: 32px 0;
+    .background-img {
+      top: -50px;
+      left: -250px;
+    }
+    .background-img-2 {
+      top: 50px;
+    }
+  }
+
+  .detail-flex-3 {
+    .background-img-2 {
+      top: 550px;
+      left: -400px;
+    }
+  }
+
+  .star-4 {
+    top: 100px;
+  }
+
+  .star-8 {
+    top: 900px;
   }
 
   .judging {
@@ -264,5 +290,33 @@
     padding-top: 3rem;
     padding-bottom: 3rem;
     border-bottom: 1px solid grey;
+    .background-img-2 {
+      display: none;
+    }
+  }
+
+  .star {
+    width: 100px;
+    height: auto;
+  }
+
+  .star-2 {
+    top: 50px;
+    left: 1000px;
+  }
+
+  .star-3 {
+    top: 400px;
+    left: 650px;
+  }
+
+  .star-6 {
+    top: 400px;
+    left: 350px;
+  }
+
+  .star-8 {
+    top: 700px;
+    left: 600px;
   }
 }
