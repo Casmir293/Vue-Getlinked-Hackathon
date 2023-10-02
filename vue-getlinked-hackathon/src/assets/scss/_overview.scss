@@ -111,11 +111,9 @@
   .background-img-2 {
     background-color: transparent;
     position: absolute;
-    top: 150px;
-    left: 150px;
+    top: 320px;
     opacity: 0.3;
     width: 100%;
-    height: 70%;
   }
 }
 
@@ -133,11 +131,10 @@
   .background-img-2 {
     background-color: transparent;
     position: absolute;
-    top: 480px;
-    left: 150px;
+    top: 900px;
+    left: -100px;
     opacity: 0.3;
     width: 100%;
-    height: 70%;
   }
 }
 
@@ -157,7 +154,7 @@
 
 .star-2 {
   top: 520px;
-  left: 350px;
+  left: 300px;
   animation: blink 3s infinite;
 }
 
@@ -169,7 +166,7 @@
 
 .star-4 {
   top: 400px;
-  left: 350px;
+  left: 300px;
   animation: blink 3s infinite;
 }
 
