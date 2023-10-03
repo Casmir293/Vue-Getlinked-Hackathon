@@ -11,6 +11,10 @@
     <transition name="slide-down-fade" appear>
       <overview />
     </transition>
+
+    <transition name="slide-down-fade" appear>
+      <faq />
+    </transition>
   </main>
 
   <footer></footer>
@@ -20,6 +24,7 @@
 import HeaderNav from "../components/HeaderNavComp.vue";
 import Features from "../components/FeaturesComp.vue";
 import Overview from "../components/OverviewComp.vue";
+import Faq from "../components/FaqComp.vue";
 </script>
 
 <style lang="scss">

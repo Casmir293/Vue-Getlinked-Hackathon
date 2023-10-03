@@ -18,3 +18,8 @@
   font-family: "Unica-One";
   src: url(../fonts/UnicaOne-Regular.ttf) format("truetype");
 }
+
+@font-face {
+  font-family: "Made-Tommy";
+  src: url(../fonts/made-tommy-outline.otf) format("otf");
+}
