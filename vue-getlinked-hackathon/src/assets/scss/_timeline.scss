@@ -1,0 +1,229 @@
+.timeline {
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+  position: relative;
+  .timeline-head {
+    text-align: center;
+    margin-bottom: 1rem;
+    .timeline-subhead {
+      font-family: $header-font;
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 133%;
+    }
+    .timeline-subbody {
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 172.4%;
+      width: 18.25rem;
+      margin: auto;
+    }
+  }
+}
+
+.time-wrapper {
+  padding: 1rem 3rem;
+  .time-content {
+    border-left: 2px solid $light-purple;
+    padding-left: 1rem;
+    margin-left: 8px;
+    .time-content-head {
+      font-size: 0.75rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      font-family: $header-font;
+      color: $light-purple;
+    }
+    .time-content-body {
+      font-size: 0.75rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 159.9%;
+      margin-bottom: 0.5rem;
+    }
+  }
+  .num-date {
+    display: flex;
+    align-items: center;
+    .time-num {
+      height: 1.2rem;
+      width: 1.2rem;
+      border-radius: 50%;
+      background: linear-gradient(270deg, #903aff 0%, #d434fe 100%);
+      font-size: 0.75rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+    .time-date {
+      font-size: 0.75rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      color: $light-purple;
+      padding-left: 1rem;
+    }
+  }
+}
+
+.timeline-desktop {
+  display: none;
+}
+
+// stars- start
+.star {
+  width: 15px;
+  height: auto;
+  position: absolute;
+  background-color: transparent;
+}
+
+.star-1 {
+  top: 100px;
+  left: 80px;
+  animation: blink 2s infinite;
+}
+
+.star-2 {
+  top: 490px;
+  left: 300px;
+  animation: blink 0.5s infinite;
+}
+
+.star-3 {
+  top: 1000px;
+  left: 20px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+// Media Query for Ipad
+@media only screen and (min-width: 576px) {
+  .timeline-phone {
+    display: none;
+  }
+
+  .timeline-desktop {
+    display: block;
+  }
+
+  .desk-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .desk-details,
+  .desk-date {
+    flex: 1;
+    width: 45%;
+  }
+
+  .desk-num {
+    flex: 0 0 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    p {
+      width: 3px;
+      height: 5rem;
+      background-color: $light-purple;
+    }
+    div {
+      background: linear-gradient(270deg, #903aff 0%, #d434fe 100%);
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      margin: auto;
+    }
+  }
+
+  .desk-head {
+    color: $light-purple;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .desk-body {
+    font-size: 12px;
+    line-height: 170.9%;
+  }
+
+  .desk-date {
+    font-size: 12px;
+    font-weight: 700;
+    color: $light-purple;
+  }
+
+  .star-1 {
+    left: 200px;
+  }
+
+  .star-2 {
+    top: 490px;
+    left: 600px;
+  }
+
+  .star-3 {
+    top: 1020px;
+    left: 100px;
+  }
+}
+
+// Media Query for Laptops
+@media (min-width: 992px) {
+  .desk-wrapper {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .desk-head {
+    font-size: 1.5rem;
+  }
+
+  .desk-body {
+    font-size: 0.875rem;
+  }
+
+  .desk-date {
+    font-size: 1.5rem;
+  }
+
+  .star {
+    width: 25px;
+  }
+
+  .star-1 {
+    left: 450px;
+  }
+
+  .star-2 {
+    left: 1250px;
+  }
+
+  .star-3 {
+    top: 1000px;
+    left: 280px;
+  }
+}
