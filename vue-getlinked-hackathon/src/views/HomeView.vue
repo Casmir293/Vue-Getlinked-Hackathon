@@ -19,6 +19,10 @@
     <transition name="slide-down-fade" appear>
       <timeline />
     </transition>
+
+    <transition name="slide-down-fade" appear>
+      <prizes />
+    </transition>
   </main>
 
   <footer></footer>
@@ -30,6 +34,7 @@ import Features from "../components/FeaturesComp.vue";
 import Overview from "../components/OverviewComp.vue";
 import Faq from "../components/FaqComp.vue";
 import Timeline from "../components/TimelineComp.vue";
+import prizes from "../components/PrizesComp.vue";
 </script>
 
 <style lang="scss">
