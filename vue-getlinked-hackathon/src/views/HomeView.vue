@@ -33,7 +33,11 @@
     </transition>
   </main>
 
-  <footer></footer>
+  <footer>
+    <transition name="slide-down-fade" appear>
+      <foot />
+    </transition>
+  </footer>
 </template>
 
 <script setup>
@@ -45,6 +49,7 @@ import Timeline from "../components/TimelineComp.vue";
 import Prizes from "../components/PrizesComp.vue";
 import Partner from "../components/PartnerComp.vue";
 import Privacy from "../components/PrivacyComp.vue";
+import Foot from "../components/FootComp.vue";
 </script>
 
 <style lang="scss">
