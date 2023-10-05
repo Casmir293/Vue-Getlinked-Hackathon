@@ -1,0 +1,318 @@
+.partner {
+  padding-bottom: 4rem;
+  border-bottom: 1px solid grey;
+  position: relative;
+}
+
+.partner-top {
+  text-align: center;
+  padding: 3rem 3rem 0rem 3rem;
+  .partner-head {
+    font-family: $header-font;
+    margin: auto;
+    padding-bottom: 1rem;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: relative;
+    background: transparent;
+    z-index: 1;
+  }
+  .partner-body {
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170.9%;
+    position: relative;
+    background: transparent;
+    z-index: 1;
+  }
+}
+
+.sponsor-border {
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 0.3125rem;
+  border: 1px solid #d434fe;
+  background: rgba(255, 255, 255, 0.01);
+  img {
+    width: 100%;
+  }
+}
+
+.sponsor-top {
+  display: grid;
+  grid-template-columns: 30% 5% 30% 5% 30%;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+  background: transparent;
+  z-index: 1;
+  .sponsor {
+    padding: 5px;
+    position: relative;
+    background: transparent;
+    z-index: 1;
+    img {
+      position: relative;
+      background: transparent;
+      z-index: 1;
+    }
+  }
+  .sponsor-line {
+    width: 2px;
+    height: 45px;
+    background-color: $light-purple;
+  }
+}
+
+.sponsor-center {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  padding: 5px 0px;
+  position: relative;
+  background: transparent;
+  z-index: 1;
+  .hr-line {
+    width: 40px;
+    height: 2px;
+    background-color: $light-purple;
+  }
+}
+
+.sponsor-bottom {
+  display: grid;
+  grid-template-columns: 30% 5% 30% 5% 30%;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+  background: transparent;
+  z-index: 1;
+  .sponsor {
+    padding: 5px;
+    position: relative;
+    background: transparent;
+    z-index: 1;
+    .paybox {
+      position: relative;
+      background: transparent;
+      z-index: 1;
+      span {
+        position: relative;
+        background: transparent;
+        z-index: 1;
+      }
+    }
+  }
+
+  img {
+    position: relative;
+    background: transparent;
+    z-index: 1;
+  }
+
+  .sponsor-line {
+    width: 2px;
+    height: 40px;
+    background-color: $light-purple;
+  }
+}
+
+.paybox {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71875rem;
+  span {
+    color: #00a3ff;
+  }
+}
+
+.vuzual {
+  div {
+    font-size: 0.6rem;
+    font-style: normal;
+    font-weight: 400;
+    span {
+      color: #f00;
+    }
+  }
+}
+
+.design {
+  font-size: 0.2rem;
+  font-weight: 300;
+  float: right;
+}
+
+// stars- start
+.star {
+  width: 15px;
+  height: auto;
+  position: absolute;
+  background-color: transparent;
+}
+
+.star-1 {
+  top: 200px;
+  left: 50px;
+  animation: blink 2s infinite;
+}
+
+.star-2 {
+  top: 260px;
+  left: 180px;
+  animation: blink 1s infinite;
+}
+
+.star-3 {
+  top: 350px;
+  left: 300px;
+  animation: blink 2s infinite;
+}
+
+.background-img {
+  background-color: transparent;
+  position: absolute;
+  opacity: 0.3;
+}
+
+.background-img-1 {
+  top: -100px;
+  left: -150px;
+}
+
+.background-img-2 {
+  top: 350px;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+// Media Query for Ipad
+@media only screen and (min-width: 576px) {
+  .sponsor-border {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    padding: 1rem 2rem;
+    position: relative;
+    background: transparent;
+    z-index: 1;
+  }
+
+  .star-1 {
+    top: 110px;
+    left: 180px;
+  }
+
+  .star-2 {
+    top: 160px;
+    left: 380px;
+  }
+
+  .star-3 {
+    left: 380px;
+  }
+
+  .background-img-1 {
+    top: -100px;
+    left: -250px;
+  }
+
+  .background-img-2 {
+    top: 250px;
+  }
+}
+
+// Media Query for Laptops
+@media (min-width: 992px) {
+  .partner-top {
+    padding-top: 5rem;
+    .partner-head {
+      font-size: 2rem;
+    }
+    .partner-body {
+      font-size: 0.875rem;
+    }
+  }
+
+  .sponsor-border {
+    padding: 8rem 16rem;
+  }
+
+  .sponsor-top {
+    .sponsor {
+      padding: 15px;
+    }
+    .sponsor-line {
+      width: 3px;
+      height: 80%;
+    }
+  }
+
+  .sponsor-bottom {
+    .sponsor {
+      padding: 15px;
+    }
+    .sponsor-line {
+      width: 3px;
+      height: 80%;
+    }
+  }
+
+  .sponsor-center {
+    padding: 10px 0px;
+    .hr-line {
+      width: 80%;
+      height: 3px;
+    }
+  }
+
+  .paybox {
+    font-size: 3rem;
+  }
+
+  .vuzual {
+    div {
+      font-size: 2rem;
+    }
+  }
+
+  .design {
+    font-size: 0.6875rem;
+    font-weight: 400;
+  }
+
+  .star {
+    width: 25px;
+  }
+
+  .star-1 {
+    top: 300px;
+    left: 780px;
+  }
+
+  .star-3 {
+    top: 750px;
+    left: 780px;
+  }
+
+  .background-img-1 {
+    top: -450px;
+    left: -500px;
+  }
+
+  .background-img-2 {
+    top: 350px;
+  }
+}
