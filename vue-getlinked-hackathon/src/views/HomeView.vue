@@ -27,6 +27,10 @@
     <transition name="slide-down-fade" appear>
       <partner />
     </transition>
+
+    <transition name="slide-down-fade" appear>
+      <privacy />
+    </transition>
   </main>
 
   <footer></footer>
@@ -40,6 +44,7 @@ import Faq from "../components/FaqComp.vue";
 import Timeline from "../components/TimelineComp.vue";
 import Prizes from "../components/PrizesComp.vue";
 import Partner from "../components/PartnerComp.vue";
+import Privacy from "../components/PrivacyComp.vue";
 </script>
 
 <style lang="scss">
