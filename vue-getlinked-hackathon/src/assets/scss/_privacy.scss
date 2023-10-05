@@ -1,0 +1,312 @@
+* {
+  background-color: transparent;
+}
+
+.privacy {
+  position: relative;
+  padding: 4rem 3rem;
+  .register-btn {
+    border-radius: 4px;
+    background: $gradient;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: 2rem;
+    font-size: 0.7rem;
+  }
+}
+
+.privacy-head {
+  width: 11.75rem;
+  margin: auto;
+  text-align: center;
+  font-family: $header-font;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-bottom: 1rem;
+  span {
+    color: $light-purple;
+  }
+}
+
+.privacy-body {
+  text-align: center;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  .privacy-p1 {
+    color: #ffffffbf;
+
+    line-height: 1.71875rem;
+  }
+  .privacy-p2 {
+    line-height: 1.413rem;
+  }
+}
+
+.privacy-content {
+  margin-top: 2rem;
+  border-radius: 0.3125rem;
+  border: 1px solid $light-purple;
+  background: rgba(217, 217, 217, 0.03);
+  padding: 3rem 1rem;
+  .cont-1 {
+    text-align: center;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 216.4%;
+    margin-bottom: 1rem;
+  }
+  .cont-2 {
+    line-height: 216.4%;
+    font-style: normal;
+    font-weight: 700;
+    .cont-2-a {
+      color: $light-purple;
+      font-size: 0.8125rem;
+    }
+    .cont-2-b {
+      font-size: 0.75rem;
+    }
+  }
+  .cont-3 {
+    div {
+      display: flex;
+      align-items: flex-start;
+      gap: 5%;
+      img {
+        width: 20px;
+        height: auto;
+        margin-top: 5px;
+      }
+      p {
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 175.9%;
+      }
+    }
+  }
+}
+
+.privacy-graphics {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  svg {
+    width: 150px;
+    height: 250px;
+  }
+  div {
+    width: 16rem;
+    margin-top: -150px;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+// stars- start
+.star {
+  width: 15px;
+  height: auto;
+  position: absolute;
+}
+
+.star-1 {
+  top: 30px;
+  left: 120px;
+  animation: blink 2s infinite;
+}
+
+.star-2 {
+  top: 100px;
+  left: 310px;
+  animation: blink 0.5s infinite;
+}
+
+.star-3 {
+  top: 300px;
+  left: 50px;
+  animation: blink 3s infinite;
+}
+
+.star-4 {
+  top: 1000px;
+  left: 120px;
+  animation: blink 2s infinite;
+}
+
+.star-5 {
+  top: 1100px;
+  left: 310px;
+  animation: blink 1s infinite;
+}
+
+.star-6 {
+  top: 1250px;
+  left: 200px;
+  animation: blink 3s infinite;
+}
+
+.star-7 {
+  top: 200px;
+  left: 290px;
+  animation: blink 3s infinite;
+}
+
+// stars- end
+
+.background-img {
+  position: absolute;
+  top: 550px;
+  left: -170px;
+  opacity: 0.3;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+// Media Query for Ipad
+@media only screen and (min-width: 576px) {
+  .privacy {
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+
+  .privacy-head {
+    text-align: left;
+    margin: 0;
+  }
+
+  .privacy-body {
+    text-align: left;
+  }
+
+  .privacy-content {
+    .cont-1 {
+      text-align: left;
+    }
+  }
+
+  .background-img {
+    top: 480px;
+    left: -280px;
+  }
+
+  .star-4 {
+    top: 600px;
+    left: 520px;
+  }
+
+  .star-5 {
+    top: 200px;
+    left: 600px;
+  }
+
+  .star-6 {
+    top: 350px;
+    left: 700px;
+  }
+}
+
+// Media Query for Laptops
+@media (min-width: 992px) {
+  .privacy {
+    grid-template-columns: 50% 50%;
+    padding: 4rem 10rem;
+    .register-btn {
+      width: 9rem;
+      height: 3rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  }
+
+  .privacy-head {
+    width: 18.75rem;
+    font-size: 2rem;
+  }
+
+  .privacy-body {
+    font-size: 0.875rem;
+  }
+
+  .privacy-content {
+    margin-top: 3rem;
+    padding: 4rem 2rem;
+    .cont-1 {
+      text-align: left;
+      font-size: 0.875rem;
+    }
+    .cont-2 {
+      .cont-2-a {
+        font-size: 1rem;
+      }
+      .cont-2-b {
+        font-size: 0.875rem;
+      }
+    }
+    .cont-3 {
+      div {
+        p {
+          font-size: 0.875rem;
+          line-height: 216.4%;
+        }
+      }
+    }
+  }
+
+  .privacy-graphics {
+    padding: 0rem;
+    svg {
+      width: 60%;
+      height: auto;
+    }
+    div {
+      width: 100%;
+      margin-top: -300px;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .background-img {
+    top: 300px;
+    left: -600px;
+  }
+
+  .star {
+    width: 25px;
+  }
+
+  .star-3 {
+    left: 1050px;
+  }
+
+  .star-5 {
+    left: 1310px;
+  }
+
+  .star-7 {
+    top: 800px;
+    left: 1300px;
+  }
+}
