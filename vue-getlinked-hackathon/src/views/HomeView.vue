@@ -33,11 +33,9 @@
     </transition>
   </main>
 
-  <footer>
-    <transition name="slide-down-fade" appear>
-      <foot />
-    </transition>
-  </footer>
+  <transition name="slide-down-fade" appear>
+    <foot />
+  </transition>
 </template>
 
 <script setup>

@@ -1,0 +1,277 @@
+* {
+  background: transparent;
+  img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+footer {
+  background: #100b20;
+  padding: 3rem;
+  position: relative;
+}
+
+.subfoot-1 {
+  padding-bottom: 2rem;
+  font-style: normal;
+  z-index: 1;
+  position: relative;
+  .foot-head {
+    font-family: $header-font;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 1rem;
+    a {
+      text-decoration: none;
+      color: #fff;
+      &:hover {
+        color: white;
+      }
+    }
+    span {
+      color: $light-purple;
+    }
+  }
+  .foot-body {
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 172.4%;
+    padding-bottom: 2rem;
+  }
+  .foot-foot {
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 172.4%;
+    a {
+      text-decoration: none;
+      color: #fff;
+      &:hover {
+        color: $light-purple;
+      }
+      span {
+        border-left: 1px solid $light-purple;
+        padding-left: 10px;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.subfoot-2 {
+  padding-bottom: 2rem;
+  .links {
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 172.4%;
+    color: $light-purple;
+  }
+  .sublist {
+    ul {
+      padding: 0;
+      li {
+        list-style: none;
+        padding-top: 10px;
+        a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 0.75rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 172.4%;
+          &:hover {
+            color: $light-purple;
+          }
+        }
+      }
+    }
+  }
+  .social-media {
+    span {
+      color: $light-purple;
+      font-size: 0.75rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    img {
+      display: inline;
+      padding-left: 1rem;
+    }
+  }
+}
+
+.subfoot-3 {
+  padding-bottom: 1rem;
+  .contact {
+    color: $light-purple;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 172.4%;
+  }
+  div {
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 157.9%;
+    padding-bottom: 1rem;
+    a {
+      color: #fff;
+      text-decoration: none;
+      &:hover {
+        color: $light-purple;
+      }
+    }
+    img {
+      display: inline;
+      padding-right: 1rem;
+    }
+  }
+
+  .address {
+    display: flex;
+    p {
+      width: 5.5rem;
+    }
+  }
+}
+
+.main-footer {
+  text-align: center;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  a {
+    text-decoration: none;
+    color: #fff;
+    &:hover {
+      color: $light-purple;
+    }
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+// stars- start
+.star {
+  width: 15px;
+  height: auto;
+  position: absolute;
+}
+
+.star-1 {
+  top: 100px;
+  left: 20px;
+  animation: blink 2s infinite;
+}
+
+.star-2 {
+  top: 320px;
+  left: 150px;
+  animation: blink 1s infinite;
+}
+
+.star-3 {
+  top: 520px;
+  left: 290px;
+  animation: blink 3s infinite;
+}
+
+.star-4 {
+  top: 600px;
+  left: 150px;
+  animation: blink 0.5s infinite;
+}
+
+// Media Query for Ipad
+@media only screen and (min-width: 576px) {
+  .subfooter {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    justify-content: center;
+    justify-items: center;
+    align-items: start;
+  }
+
+  .star-2 {
+    top: 280px;
+    left: 150px;
+    animation: blink 1s infinite;
+  }
+
+  .star-3 {
+    top: 150px;
+    left: 480px;
+    animation: blink 3s infinite;
+  }
+
+  .star-4 {
+    top: 250px;
+    left: 650px;
+    animation: blink 0.5s infinite;
+  }
+}
+
+// Media Query for Laptops
+@media (min-width: 992px) {
+  footer {
+    padding: 4rem 10rem;
+  }
+
+  .subfooter {
+    grid-template-columns: 50% 25% 25%;
+  }
+
+  .subfoot-1 {
+    .foot-head {
+      font-size: 2rem;
+    }
+  }
+
+  .subfoot-2 {
+    .sublist {
+      ul {
+        display: block;
+        li {
+          padding: 0;
+        }
+      }
+    }
+    .social-media {
+      img {
+        display: inline;
+        padding-left: 0.5rem;
+      }
+    }
+  }
+
+  .main-footer {
+    padding-top: 2rem;
+  }
+
+  .star {
+    width: 25px;
+  }
+
+  .star-2 {
+    top: 150px;
+    left: 900px;
+    animation: blink 1s infinite;
+  }
+
+  .star-3 {
+    left: 1250px;
+  }
+}
