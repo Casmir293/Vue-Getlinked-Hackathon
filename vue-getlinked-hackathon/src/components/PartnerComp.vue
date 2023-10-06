@@ -22,7 +22,7 @@
     </section>
 
     <section class="partner-bottom">
-      <div class="sponsor-border">
+      <div v-motion-pop-visible-once class="sponsor-border">
         <div class="sponsor-top">
           <div class="sponsor">
             <img src="/public/imgs/img-1.png" alt="sponsor" />

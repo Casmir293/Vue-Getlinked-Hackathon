@@ -9,7 +9,7 @@
       </p>
 
       <!-- Accordion -->
-      <div class="faq-accordion">
+      <div v-motion-roll-visible-once-left class="faq-accordion">
         <div class="accordion accordion-flush" id="accordionFlushExample">
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
@@ -164,6 +164,7 @@
       />
       <div class="question-mark">?<span>?</span>?</div>
       <img
+        v-motion-roll-visible-once-right
         class="think-img"
         src="/public/imgs/thinking-man.png"
         alt="thinking"

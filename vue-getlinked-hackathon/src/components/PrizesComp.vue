@@ -19,9 +19,13 @@
       </p>
     </section>
 
-    <section class="prize-bottom">
+    <section v-motion-pop-visible-once class="prize-bottom">
       <div class="trophy-img">
-        <img src="/public/imgs/trophy.png" alt="Trophy" />
+        <img
+          v-motion-fade-visible-once
+          src="/public/imgs/trophy.png"
+          alt="Trophy"
+        />
       </div>
       <div class="medal-img">
         <div class="silver">

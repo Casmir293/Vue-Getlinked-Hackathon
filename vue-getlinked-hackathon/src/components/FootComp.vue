@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer v-motion-slide-visible-once-bottom>
     <img class="star star-1" src="/public/imgs/big-white-star.png" alt="star" />
     <img class="star star-2" src="/public/imgs/big-white-star.png" alt="star" />
     <img class="star star-3" src="/public/imgs/star.png" alt="star" />
