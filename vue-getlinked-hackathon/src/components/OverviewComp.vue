@@ -4,12 +4,12 @@
       <img class="star star-1" src="/public/imgs/p-star.png" alt="star" />
       <img class="star star-2" src="/public/imgs/p-star.png" alt="star" />
       <img
-        v-motion-roll-visible-once-left
+        v-motion-roll-left
         src="/public/imgs/big-idea.png"
         alt="The Big Idea"
       />
       <img class="arrow" src="/public/imgs/arrow.png" alt="arrow" />
-      <div v-motion-roll-visible-once-right>
+      <div v-motion-roll-right>
         <p class="subtopic subtopic-1">
           Introduction to getlinked <span>tech Hackathon 1.0</span>
         </p>
@@ -46,7 +46,7 @@
         src="/public/imgs/big-white-star.png"
         alt="star"
       />
-      <div v-motion-roll-visible-once-left class="content-2">
+      <div v-motion-roll-left class="content-2">
         <p class="subtopic">Rules and <span>Guidelines</span></p>
         <p class="write-ups write-ups-2">
           Our tech hackathon is a melting pot of visionaries, and its purpose is
@@ -58,7 +58,7 @@
         </p>
       </div>
       <img
-        v-motion-roll-visible-once-right
+        v-motion-roll-right
         src="/public/imgs/sitting-lady.png"
         alt="Sitting Lady"
         class="lady-img"

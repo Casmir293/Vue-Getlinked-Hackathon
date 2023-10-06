@@ -164,7 +164,6 @@
       />
       <div class="question-mark">?<span>?</span>?</div>
       <img
-        v-motion-roll-visible-once-right
         class="think-img"
         src="/public/imgs/thinking-man.png"
         alt="thinking"

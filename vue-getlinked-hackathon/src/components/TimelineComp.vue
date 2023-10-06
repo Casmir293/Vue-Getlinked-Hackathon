@@ -11,50 +11,50 @@
       </p>
     </div>
     <!-- (Mobile-Phone) -->
-    <section class="timeline-phone">
+    <section v-motion-slide-visible-once-right class="timeline-phone">
       <div class="time-wrapper">
-        <div v-motion-slide-visible-once-right class="time-content">
+        <div class="time-content">
           <p class="time-content-head">Hackathon Announcement</p>
           <p class="time-content-body">
             The getlinked tech hackathon 1.0 is formally announced to the
             general public and teams begin to get ready to register
           </p>
         </div>
-        <div v-motion-slide-visible-once-left class="num-date">
+        <div class="num-date">
           <div class="time-num">1</div>
           <div class="time-date">November 18, 2023</div>
         </div>
       </div>
 
       <div class="time-wrapper">
-        <div v-motion-slide-visible-once-right class="time-content">
+        <div class="time-content">
           <p class="time-content-head">Teams Registration begins</p>
           <p class="time-content-body">
             Interested teams can now show their interest in the getlinked tech
             hackathon 1.0 2023 by proceeding to register
           </p>
         </div>
-        <div v-motion-slide-visible-once-left class="num-date">
+        <div class="num-date">
           <div class="time-num">2</div>
           <div class="time-date">November 18, 2023</div>
         </div>
       </div>
 
       <div class="time-wrapper">
-        <div v-motion-slide-visible-once-right class="time-content">
+        <div class="time-content">
           <p class="time-content-head">Teams Registration ends</p>
           <p class="time-content-body">
             Interested Participants are no longer Allowed to register
           </p>
         </div>
-        <div v-motion-slide-visible-once-left class="num-date">
+        <div class="num-date">
           <div class="time-num">3</div>
           <div class="time-date">November 18, 2023</div>
         </div>
       </div>
 
       <div class="time-wrapper">
-        <div v-motion-slide-visible-once-right class="time-content">
+        <div class="time-content">
           <p class="time-content-head">
             Announcement of the accepted teams and ideas
           </p>
@@ -63,14 +63,14 @@
             1.0 2023 are formally announced
           </p>
         </div>
-        <div v-motion-slide-visible-once-left class="num-date">
+        <div class="num-date">
           <div class="time-num">4</div>
           <div class="time-date">November 18, 2023</div>
         </div>
       </div>
 
       <div class="time-wrapper">
-        <div v-motion-slide-visible-once-right class="time-content">
+        <div class="time-content">
           <p class="time-content-head">
             Getlinked Hackathon 1.0 Offically Begins
           </p>
@@ -79,21 +79,21 @@
             driven solutions
           </p>
         </div>
-        <div v-motion-slide-visible-once-left class="num-date">
+        <div class="num-date">
           <div class="time-num">5</div>
           <div class="time-date">November 18, 2023</div>
         </div>
       </div>
 
       <div class="time-wrapper">
-        <div v-motion-slide-visible-once-right class="time-content">
+        <div class="time-content">
           <p class="time-content-head">Demo Day</p>
           <p class="time-content-body">
             Teams get the opportunity to pitch their projects to judges. The
             winner of the hackathon will also be announced on this day
           </p>
         </div>
-        <div v-motion-slide-visible-once-left class="num-date">
+        <div class="num-date">
           <div class="time-num">6</div>
           <div class="time-date">November 18, 2023</div>
         </div>

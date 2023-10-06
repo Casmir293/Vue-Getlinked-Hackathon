@@ -21,7 +21,7 @@
           our aim to always take of our participant
         </p>
       </div>
-      <div v-motion-slide-visible-once-left class="privacy-content">
+      <div class="privacy-content">
         <div class="cont-1">
           At getlinked tech Hackathon 1.0, we value your privacy and are
           committed to protecting your personal information. This Privacy Policy
@@ -80,11 +80,7 @@
         </defs>
       </svg>
       <div>
-        <img
-          v-motion-slide-visible-once-right
-          src="/public/imgs/privacy.png"
-          alt="privacy"
-        />
+        <img src="/public/imgs/privacy.png" alt="privacy" />
       </div>
     </section>
   </section>
