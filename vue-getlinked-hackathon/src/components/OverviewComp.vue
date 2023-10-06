@@ -3,9 +3,13 @@
     <section class="detail-flex detail-flex-1">
       <img class="star star-1" src="/public/imgs/p-star.png" alt="star" />
       <img class="star star-2" src="/public/imgs/p-star.png" alt="star" />
-      <img src="/public/imgs/big-idea.png" alt="The Big Idea" />
+      <img
+        v-motion-roll-visible-once-left
+        src="/public/imgs/big-idea.png"
+        alt="The Big Idea"
+      />
       <img class="arrow" src="/public/imgs/arrow.png" alt="arrow" />
-      <div>
+      <div v-motion-roll-visible-once-right>
         <p class="subtopic subtopic-1">
           Introduction to getlinked <span>tech Hackathon 1.0</span>
         </p>
@@ -42,7 +46,7 @@
         src="/public/imgs/big-white-star.png"
         alt="star"
       />
-      <div class="content-2">
+      <div v-motion-roll-visible-once-left class="content-2">
         <p class="subtopic">Rules and <span>Guidelines</span></p>
         <p class="write-ups write-ups-2">
           Our tech hackathon is a melting pot of visionaries, and its purpose is
@@ -54,6 +58,7 @@
         </p>
       </div>
       <img
+        v-motion-roll-visible-once-right
         src="/public/imgs/sitting-lady.png"
         alt="Sitting Lady"
         class="lady-img"
@@ -78,35 +83,40 @@
         src="/public/imgs/big-white-star.png"
         alt="star"
       />
-      <img class="detail-img-3" src="/public/imgs/team.png" alt="Team Work" />
+      <img
+        v-motion-roll-visible-once-left
+        class="detail-img-3"
+        src="/public/imgs/team.png"
+        alt="Team Work"
+      />
       <div class="judging">
         <p class="subtopic">Judging Criteria <span>Key attributes</span></p>
 
         <div class="write-ups">
-          <p>
+          <p v-motion-roll-visible-once-right>
             <b>Innovation and Creativity:</b> Evaluate the uniqueness and
             creativity of the solution. Consider whether it addresses a
             real-world problem in a novel way or introduces innovative features.
           </p>
-          <p>
+          <p v-motion-roll-visible-once-right>
             <b>Functionality:</b> Assess how well the solution works. Does it
             perform its intended functions effectively and without major issues?
             Judges would consider the completeness and robustness of the
             solution.
           </p>
-          <p>
+          <p v-motion-roll-visible-once-right>
             <b>Impact and Relevance:</b> Determine the potential impact of the
             solution in the real world. Does it address a significant problem,
             and is it relevant to the target audience? Judges would assess the
             potential social, economic, or environmental benefits.
           </p>
-          <p>
+          <p v-motion-roll-visible-once-right>
             <b>Technical Complexity:</b> Evaluate the technical sophistication
             of the solution. Judges would consider the complexity of the code,
             the use of advanced technologies or algorithms, and the scalability
             of the solution.
           </p>
-          <p>
+          <p v-motion-roll-visible-once-right>
             <b>Adherence to Hackathon Rules:</b> Judges will Ensure that the
             team adhered to the rules and guidelines of the hackathon, including
             deadlines, use of specific technologies or APIs, and any other

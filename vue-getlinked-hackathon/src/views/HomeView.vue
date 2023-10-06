@@ -8,34 +8,20 @@
       <features />
     </transition>
 
-    <transition name="slide-down-fade" appear>
-      <overview />
-    </transition>
+    <overview />
 
-    <transition name="slide-down-fade" appear>
-      <faq />
-    </transition>
+    <faq />
 
-    <transition name="slide-down-fade" appear>
-      <timeline />
-    </transition>
+    <timeline />
 
-    <transition name="slide-down-fade" appear>
-      <prizes />
-    </transition>
+    <prizes />
 
-    <transition name="slide-down-fade" appear>
-      <partner />
-    </transition>
+    <partner />
 
-    <transition name="slide-down-fade" appear>
-      <privacy />
-    </transition>
+    <privacy />
   </main>
 
-  <transition name="slide-down-fade" appear>
-    <foot />
-  </transition>
+  <foot />
 </template>
 
 <script setup>

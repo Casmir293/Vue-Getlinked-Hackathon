@@ -67,7 +67,7 @@
         </div>
       </div>
 
-      <div class="main-feat-right">
+      <div v-motion-roll-bottom class="main-feat-right">
         <img
           class="background-img"
           src="/public/imgs/purple-1.png"
