@@ -18,35 +18,51 @@
         </div>
       </nav>
     </section>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="23"
-      height="23"
-      viewBox="0 0 23 23"
-      fill="none"
-    >
-      <circle cx="11.5" cy="11.5" r="11" stroke="url(#paint0_linear_177_298)" />
-      <path
-        d="M12.2666 9.20001L9.19995 12.2667L12.2666 14.5667"
-        stroke="white"
-      />
-      <defs>
-        <linearGradient
-          id="paint0_linear_177_298"
-          x1="11.5"
-          y1="0"
-          x2="11.5"
-          y2="23"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stop-color="#903AFF" />
-          <stop offset="1" stop-color="#FF26B9" />
-        </linearGradient>
-      </defs>
-    </svg>
+    <router-link to="/">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="23"
+        height="23"
+        viewBox="0 0 23 23"
+        fill="none"
+      >
+        <circle
+          cx="11.5"
+          cy="11.5"
+          r="11"
+          stroke="url(#paint0_linear_177_298)"
+        />
+        <path
+          d="M12.2666 9.20001L9.19995 12.2667L12.2666 14.5667"
+          stroke="white"
+        />
+        <defs>
+          <linearGradient
+            id="paint0_linear_177_298"
+            x1="11.5"
+            y1="0"
+            x2="11.5"
+            y2="23"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#903AFF" />
+            <stop offset="1" stop-color="#FF26B9" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </router-link>
   </header>
 
   <main>
+    <img
+      class="background-img"
+      src="/public/imgs/purple-1.png"
+      alt="background-img"
+    />
+    <img class="star star-1" src="/public/imgs/big-white-star.png" alt="star" />
+    <img class="star star-2" src="/public/imgs/star.png" alt="star" />
+    <img class="star star-3" src="/public/imgs/p-star.png" alt="star" />
+    <img class="star star-4" src="/public/imgs/p-star.png" alt="star" />
     <!-- Mobile -->
     <section class="mobile-wrapper">
       <div class="topic">
@@ -67,10 +83,10 @@
           rows="6"
           placeholder="Message"
         ></textarea>
-        <div>Submit</div>
+        <div class="register-btn submit">Submit</div>
       </form>
       <div class="social-media">
-        <span>Follow us</span>
+        <span>Share on</span> <br />
         <a href="https://www.instagram.com/getlinked.ai/" target="_blank"
           ><img src="/public/imgs/mdi_instagram.svg" alt="IG"
         /></a>
@@ -85,6 +101,13 @@
         /></a>
       </div>
     </section>
+
+    <!-- iPad -->
+    <section class="ipad-wrapper">
+      <div class="left"></div>
+
+      <div class="right"></div>
+    </section>
   </main>
 </template>
 
@@ -95,6 +118,10 @@
 
 * {
   background: transparent;
+}
+
+.ipad-wrapper {
+  display: none;
 }
 
 svg {
@@ -150,6 +177,8 @@ svg {
 
 .mobile-wrapper {
   margin: 32px;
+  z-index: 1;
+  position: relative;
   .topic {
     color: $light-purple;
     font-family: $header-font;
@@ -200,11 +229,87 @@ svg {
         outline-color: $light-purple;
       }
     }
+
+    .register-btn {
+      margin: 32px auto;
+    }
+  }
+
+  .social-media {
+    text-align: center;
+    font-size: 12px;
+    color: $light-purple;
+    img {
+      display: inline;
+      margin: 8px;
+      width: 15px;
+      height: 15px;
+    }
   }
 }
 
+main {
+  position: relative;
+}
+
+.background-img {
+  position: absolute;
+  top: 0px;
+  left: -100px;
+  opacity: 0.3;
+}
+
+// stars- start
+.star {
+  width: 15px;
+  height: auto;
+  position: absolute;
+}
+
+.star-1 {
+  top: 550px;
+  left: 350px;
+  animation: blink 0.5s infinite;
+}
+
+.star-2 {
+  top: 20px;
+  left: 310px;
+  animation: blink 2s infinite;
+}
+
+.star-3 {
+  top: 650px;
+  left: 50px;
+  animation: blink 1.5s infinite;
+}
+
+.star-4 {
+  top: -50px;
+  left: 170px;
+  animation: blink 1s infinite;
+}
+
+// stars- end
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
 // Media Query for Ipad
 @media only screen and (min-width: 576px) {
+  .mobile-wrapper {
+    display: none;
+  }
+
+  .ipad-wrapper {
+    display: block;
+  }
 }
 
 // Media Query for Laptop

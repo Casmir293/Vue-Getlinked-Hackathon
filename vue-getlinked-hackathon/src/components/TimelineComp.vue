@@ -11,7 +11,7 @@
       </p>
     </div>
     <!-- (Mobile-Phone) -->
-    <section v-motion-slide-visible-once-right class="timeline-phone">
+    <section class="timeline-phone">
       <div class="time-wrapper">
         <div class="time-content">
           <p class="time-content-head">Hackathon Announcement</p>

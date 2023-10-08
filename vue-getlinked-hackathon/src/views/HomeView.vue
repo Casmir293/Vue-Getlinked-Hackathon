@@ -36,7 +36,7 @@ import Privacy from "../components/PrivacyComp.vue";
 import Foot from "../components/FootComp.vue";
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 main {
   margin-top: 80.5px;
 }
