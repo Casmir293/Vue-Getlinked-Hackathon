@@ -1,6 +1,6 @@
 <template>
   <header>
-    <section class="home-header">
+    <section v-motion-slide-top class="home-header">
       <div class="logo">
         <router-link to="/">get<span>linked</span></router-link>
       </div>
@@ -11,7 +11,9 @@
           <li><router-link to="/#timeline">Timeline</router-link></li>
           <li><router-link to="/#overview">Overview</router-link></li>
           <li><router-link to="/#faq">FAQs</router-link></li>
-          <li><router-link to="/contact">Contact</router-link></li>
+          <li class="contact">
+            <router-link to="/contact">Contact</router-link>
+          </li>
         </ul>
         <div class="register-btn">
           <router-link to="/register">Register</router-link>
@@ -64,7 +66,7 @@
     <img class="star star-3" src="/public/imgs/p-star.png" alt="star" />
     <img class="star star-4" src="/public/imgs/p-star.png" alt="star" />
     <!-- Mobile -->
-    <section class="mobile-wrapper">
+    <section v-motion-slide-bottom class="mobile-wrapper">
       <div class="topic">
         Questions or need assistance? <br />
         Let us know about it
@@ -72,18 +74,26 @@
 
       <p class="intro">Email us below to any question related to our event</p>
 
-      <form action="">
-        <input type="text" placeholder="Team's Name" />
-        <input type="text" placeholder="Topic" />
-        <input type="text" placeholder="Email" />
+      <form
+        action="https://backend.getlinked.ai/hackathon/contact-form"
+        method="post"
+      >
+        <input
+          type="text"
+          name="first_name"
+          placeholder="First Name"
+          required
+        />
+        <input type="email" name="email" placeholder="Email" required />
         <textarea
-          name=""
+          name="message"
           id=""
           cols="30"
           rows="6"
           placeholder="Message"
+          required
         ></textarea>
-        <div class="register-btn submit">Submit</div>
+        <button type="submit" class="register-btn">Submit</button>
       </form>
       <div class="social-media">
         <span>Share on</span> <br />
@@ -104,7 +114,7 @@
 
     <!-- iPad -->
     <section class="ipad-wrapper">
-      <div class="left">
+      <div v-motion-slide-left class="left">
         <div class="title">Get in touch</div>
         <p>
           Contact <br />
@@ -139,24 +149,32 @@
         </div>
       </div>
 
-      <div class="right">
+      <div v-motion-slide-right class="right">
         <div class="topic">
           Questions or need assistance? <br />
-          Let us know about it
+          Let us know about it!
         </div>
 
-        <form action="">
-          <input type="text" placeholder="Team's Name" />
-          <input type="text" placeholder="Topic" />
-          <input type="text" placeholder="Email" />
+        <form
+          action="https://backend.getlinked.ai/hackathon/contact-form"
+          method="post"
+        >
+          <input
+            type="text"
+            name="first_name"
+            placeholder="First Name"
+            required
+          />
+          <input type="email" name="email" placeholder="Email" required />
           <textarea
-            name=""
+            name="message"
             id=""
             cols="30"
             rows="6"
             placeholder="Message"
+            required
           ></textarea>
-          <div class="register-btn submit">Submit</div>
+          <button type="submit" class="register-btn">Submit</button>
         </form>
       </div>
     </section>
@@ -219,6 +237,8 @@ svg {
   display: flex;
   margin-left: 32px;
   margin-top: 30px;
+  color: #fff;
+  border: none;
   a {
     background-color: inherit;
     font-size: 16px;
@@ -405,7 +425,7 @@ main {
       font-family: $header-font;
       font-size: 20px;
       font-weight: 600;
-      width: 195px;
+      line-height: 1.5;
     }
 
     form {
@@ -473,6 +493,7 @@ main {
   .home-header {
     display: flex;
     padding: 48px 100px 16px 100px;
+    background-color: $dark-purple;
 
     .laptop-menu {
       display: flex;
@@ -498,6 +519,14 @@ main {
             }
           }
         }
+        .contact {
+          a {
+            background: $gradient;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
       }
     }
   }
@@ -509,6 +538,34 @@ main {
       transform: scale(1.2);
       transition: 0.5s;
     }
+  }
+
+  .ipad-wrapper {
+    grid-template-columns: 50% 50%;
+    margin: 150px 100px 0px 100px;
+  }
+
+  .background-img {
+    top: -100px;
+    left: -400px;
+    opacity: 0.2;
+    width: 70%;
+  }
+
+  .star {
+    width: 25px;
+  }
+
+  .star-3 {
+    top: 250px;
+    left: 550px;
+    animation: blink 1.5s infinite;
+  }
+
+  .star-4 {
+    top: 0px;
+    left: 1200px;
+    animation: blink 1s infinite;
   }
 }
 </style>
