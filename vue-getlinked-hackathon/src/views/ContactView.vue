@@ -104,9 +104,61 @@
 
     <!-- iPad -->
     <section class="ipad-wrapper">
-      <div class="left"></div>
+      <div class="left">
+        <div class="title">Get in touch</div>
+        <p>
+          Contact <br />
+          Information
+        </p>
+        <p>
+          27,Alara Street <br />
+          Yaba 100012 <br />
+          Lagos State
+        </p>
+        <p>Call Us : 07067981819</p>
+        <p>
+          we are open from Monday-Friday <br />
+          08:00am - 05:00pm
+        </p>
+        <div class="social-media">
+          <span>Share on</span> <br />
+          <a href="https://www.instagram.com/getlinked.ai/" target="_blank"
+            ><img src="/public/imgs/mdi_instagram.svg" alt="IG"
+          /></a>
+          <a href="https://twitter.com/getlinkedai" target="_blank"
+            ><img src="/public/imgs/Vector.svg" alt="twitter"
+          /></a>
+          <a href="https://www.facebook.com/getLinkedai" target="_blank"
+            ><img src="/public/imgs/Vector (1).svg" alt="facebook"
+          /></a>
+          <a
+            href="https://www.linkedin.com/company/getlinked-ai/"
+            target="_blank"
+            ><img src="/public/imgs/ri_linkedin-fill.svg" alt="linkedin"
+          /></a>
+        </div>
+      </div>
 
-      <div class="right"></div>
+      <div class="right">
+        <div class="topic">
+          Questions or need assistance? <br />
+          Let us know about it
+        </div>
+
+        <form action="">
+          <input type="text" placeholder="Team's Name" />
+          <input type="text" placeholder="Topic" />
+          <input type="text" placeholder="Email" />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="6"
+            placeholder="Message"
+          ></textarea>
+          <div class="register-btn submit">Submit</div>
+        </form>
+      </div>
     </section>
   </main>
 </template>
@@ -308,7 +360,108 @@ main {
   }
 
   .ipad-wrapper {
-    display: block;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 30% 70%;
+    margin: 32px 16px 0px 16px;
+  }
+
+  .left {
+    z-index: 1;
+    position: relative;
+    .title {
+      font-family: $header-font;
+      font-size: 20px;
+      color: $light-purple;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 16px;
+      margin: 32px 0px;
+    }
+
+    .social-media {
+      font-size: 16px;
+      color: $light-purple;
+      img {
+        display: inline;
+        margin: 8px;
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+
+  .right {
+    z-index: 1;
+    position: relative;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 32px;
+    .topic {
+      color: $light-purple;
+      font-family: $header-font;
+      font-size: 20px;
+      font-weight: 600;
+      width: 195px;
+    }
+
+    form {
+      margin-top: 32px;
+      input {
+        display: block;
+        margin-bottom: 32px;
+        width: 100%;
+        padding: 16px 20px;
+        border-radius: 4px;
+        border: 1px solid #fff;
+        background: rgba(255, 255, 255, 0.03);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        color: #fff;
+        font-size: 16px;
+        &::placeholder {
+          font-size: 16px;
+        }
+        &:focus {
+          outline-color: $light-purple;
+        }
+      }
+
+      textarea {
+        width: 100%;
+        border-radius: 4px;
+        border: 1px solid #fff;
+        color: #fff;
+        background: rgba(255, 255, 255, 0.03);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        padding: 32px 20px;
+        font-size: 16px;
+        &::placeholder {
+          font-size: 16px;
+        }
+        &:focus {
+          outline-color: $light-purple;
+        }
+      }
+
+      .register-btn {
+        margin: 32px auto;
+      }
+    }
+
+    .social-media {
+      text-align: center;
+      font-size: 12px;
+      color: $light-purple;
+      img {
+        display: inline;
+        margin: 8px;
+        width: 15px;
+        height: 15px;
+      }
+    }
   }
 }
 
