@@ -50,7 +50,8 @@
     <!-- Mobile -->
     <section class="mobile-wrapper">
       <div class="topic">
-        Questions or need assistance? Let us know about it
+        Questions or need assistance? <br />
+        Let us know about it
       </div>
 
       <p class="intro">Email us below to any question related to our event</p>
@@ -59,7 +60,13 @@
         <input type="text" placeholder="Team's Name" />
         <input type="text" placeholder="Topic" />
         <input type="text" placeholder="Email" />
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="6"
+          placeholder="Message"
+        ></textarea>
         <div>Submit</div>
       </form>
       <div class="social-media">
@@ -86,8 +93,12 @@
 <style lang="scss" scoped>
 @import "../assets/scss/variables";
 
+* {
+  background: transparent;
+}
+
 svg {
-  margin: 16px;
+  margin: 32px 32px 0px 32px;
 }
 
 .home-header {
@@ -134,6 +145,61 @@ svg {
     font-size: 16px;
     color: #fff;
     text-decoration: none;
+  }
+}
+
+.mobile-wrapper {
+  margin: 32px;
+  .topic {
+    color: $light-purple;
+    font-family: $header-font;
+    font-size: 20px;
+    font-weight: 600;
+    width: 195px;
+  }
+
+  .intro {
+    margin: 32px 0px;
+    width: 239px;
+    font-size: 12px;
+  }
+
+  form {
+    input {
+      display: block;
+      margin-bottom: 32px;
+      width: 100%;
+      padding: 16px 20px;
+      border-radius: 4px;
+      border: 1px solid #fff;
+      background: rgba(255, 255, 255, 0.03);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      color: #fff;
+      font-size: 16px;
+      &::placeholder {
+        font-size: 16px;
+      }
+      &:focus {
+        outline-color: $light-purple;
+      }
+    }
+
+    textarea {
+      width: 100%;
+      border-radius: 4px;
+      border: 1px solid #fff;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.03);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      padding: 32px 20px;
+      font-size: 16px;
+      &::placeholder {
+        font-size: 16px;
+      }
+      &:focus {
+        outline-color: $light-purple;
+      }
+    }
   }
 }
 
