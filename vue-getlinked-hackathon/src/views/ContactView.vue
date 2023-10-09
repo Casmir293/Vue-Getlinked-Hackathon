@@ -236,7 +236,6 @@ svg {
   align-items: center;
   display: flex;
   margin-left: 32px;
-  margin-top: 30px;
   color: #fff;
   border: none;
   a {
