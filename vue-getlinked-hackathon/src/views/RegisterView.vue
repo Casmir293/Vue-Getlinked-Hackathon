@@ -20,7 +20,111 @@
         </div>
       </nav>
     </section>
+    <div class="head">Register</div>
   </header>
+
+  <main>
+    <section class="left">
+      <img src="/public/imgs/man-sit.png" alt="smart-boy" />
+    </section>
+
+    <section class="right">
+      <div class="small-head">
+        Be part of this movement! &nbsp; <span>🚶‍♂️🚶‍♀️</span>
+      </div>
+
+      <div class="big-head">CREATE YOUR ACCOUNT</div>
+
+      <form action="">
+        <label for="team_name">Team's Name</label> <br />
+        <input
+          type="text"
+          id="team_name"
+          placeholder="Enter the name of your group"
+          required
+        />
+
+        <br />
+
+        <label for="phone_number">Phone</label> <br />
+        <input
+          type="tel"
+          id="phone_number"
+          placeholder="Enter your phone number"
+          required
+        />
+
+        <br />
+
+        <label for="email">Email</label> <br />
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email address"
+          required
+        />
+
+        <br />
+
+        <label for="project_topic">Project Topic</label> <br />
+        <input
+          type="text"
+          id="project_topic"
+          placeholder="What is your group project topic"
+          required
+        />
+
+        <br />
+
+        <div class="category-grid">
+          <div>
+            <label for="category">Category</label> <br />
+            <select id="category" name="category">
+              <option value="" selected disabled>Select your category</option>
+              <option value="1">MOBILE</option>
+              <option value="2">WEB</option>
+              <option value="3">BACKEND</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="group_size">Group Size</label> <br />
+            <select id="group_size" name="group_size">
+              <option value="" selected disabled>Select</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+        </div>
+
+        <p>Please review your registration details before submitting</p>
+
+        <div class="agree-grid">
+          <input
+            class="agree"
+            type="checkbox"
+            id="privacy_poclicy_accepted"
+            name="privacy_poclicy_accepted"
+            value="false"
+          />
+          <label for="privacy_poclicy_accepted">
+            I agreed with the event terms and conditions and privacy
+            policy</label
+          >
+        </div>
+
+        <button class="register-btn" type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
 </template>
 
 <script setup></script>
@@ -30,6 +134,14 @@
 
 * {
   background: transparent;
+}
+
+.head {
+  font-size: 16px;
+  font-family: $header-font;
+  color: $light-purple;
+  font-weight: 600;
+  margin: 32px;
 }
 
 .home-header {
@@ -81,12 +193,103 @@
   }
 }
 
+main {
+  margin: 16px 32px 16px 32px;
+}
+
+.right {
+  .small-head {
+    font-size: 13px;
+    span {
+      font-size: 20px;
+      transform: scaleX(-1);
+      display: inline-block;
+      padding: 0 16px;
+      border-bottom: 2px dotted $light-purple;
+    }
+  }
+
+  .big-head {
+    font-size: 20px;
+    margin: 8px 0;
+  }
+
+  form {
+    margin-top: 24px;
+    font-size: 13px;
+    input {
+      margin-bottom: 32px;
+      margin-top: 8px;
+      display: block;
+      margin-bottom: 32px;
+      width: 100%;
+      padding: 16px 20px;
+      border-radius: 4px;
+      border: 1px solid #fff;
+      background: rgba(255, 255, 255, 0.03);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      color: #fff;
+      &::placeholder {
+        font-size: 13px;
+      }
+      &:focus {
+        outline-color: $light-purple;
+      }
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: 65% 30%;
+      gap: 5%;
+      select {
+        margin-top: 8px;
+        width: 100%;
+        height: 39px;
+        padding: 5px 10px;
+        border-radius: 4px;
+        border: 1px solid #fff;
+        background: rgba(255, 255, 255, 0.03);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        color: #fff;
+        &::placeholder {
+          font-size: 13px;
+        }
+        &:focus {
+          outline-color: $light-purple;
+        }
+      }
+    }
+
+    p {
+      font-size: 9px;
+      font-style: italic;
+      color: #ff26b9;
+      margin: 32px 0;
+    }
+
+    .agree-grid {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+
+      .agree {
+        width: 20px;
+        height: 20px;
+        margin: 2px 8px 0 0;
+      }
+    }
+  }
+}
+
 // Media Query for Ipad
 @media only screen and (min-width: 576px) {
 }
 
 // Media Query for Laptop
 @media only screen and (min-width: 992px) {
+  .head {
+    display: none;
+  }
   .home-header {
     display: flex;
     padding: 48px 100px 16px 100px;
