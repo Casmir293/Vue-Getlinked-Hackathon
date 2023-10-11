@@ -29,57 +29,72 @@
     </section>
 
     <section class="right">
+      <div class="head-2">Register</div>
       <div class="small-head">
         Be part of this movement! &nbsp; <span>🚶‍♂️🚶‍♀️</span>
       </div>
 
       <div class="big-head">CREATE YOUR ACCOUNT</div>
 
-      <form action="">
-        <label for="team_name">Team's Name</label> <br />
-        <input
-          type="text"
-          id="team_name"
-          placeholder="Enter the name of your group"
-          required
-        />
+      <form
+        action="https://backend.getlinked.ai/hackathon/registration"
+        method="post"
+      >
+        <div class="cat-grid">
+          <div>
+            <label for="team_name">Team's Name</label> <br />
+            <input
+              type="text"
+              id="team_name"
+              name="team_name"
+              placeholder="Enter the name of your group"
+              required
+            />
+          </div>
 
+          <div>
+            <label for="phone_number">Phone</label> <br />
+            <input
+              type="tel"
+              id="phone_number"
+              name="phone_number"
+              placeholder="Enter your phone number"
+              required
+            />
+          </div>
+        </div>
         <br />
 
-        <label for="phone_number">Phone</label> <br />
-        <input
-          type="tel"
-          id="phone_number"
-          placeholder="Enter your phone number"
-          required
-        />
+        <div class="cat-grid">
+          <div>
+            <label for="email">Email</label> <br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email address"
+              required
+            />
+          </div>
 
-        <br />
-
-        <label for="email">Email</label> <br />
-        <input
-          type="email"
-          id="email"
-          placeholder="Enter your email address"
-          required
-        />
-
-        <br />
-
-        <label for="project_topic">Project Topic</label> <br />
-        <input
-          type="text"
-          id="project_topic"
-          placeholder="What is your group project topic"
-          required
-        />
+          <div>
+            <label for="project_topic">Project Topic</label> <br />
+            <input
+              type="text"
+              id="project_topic"
+              name="project_topic"
+              placeholder="What is your group project topic"
+              required
+            />
+          </div>
+        </div>
 
         <br />
 
         <div class="category-grid">
           <div>
             <label for="category">Category</label> <br />
-            <select id="category" name="category">
+            <select id="category" name="category" required>
               <option value="" selected disabled>Select your category</option>
               <option value="1">MOBILE</option>
               <option value="2">WEB</option>
@@ -89,7 +104,7 @@
 
           <div>
             <label for="group_size">Group Size</label> <br />
-            <select id="group_size" name="group_size">
+            <select id="group_size" name="group_size" required>
               <option value="" selected disabled>Select</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -114,6 +129,7 @@
             id="privacy_poclicy_accepted"
             name="privacy_poclicy_accepted"
             value="false"
+            required
           />
           <label for="privacy_poclicy_accepted">
             I agreed with the event terms and conditions and privacy
@@ -142,6 +158,10 @@
   color: $light-purple;
   font-weight: 600;
   margin: 32px;
+}
+
+.head-2 {
+  display: none;
 }
 
 .home-header {
@@ -199,7 +219,7 @@ main {
 
 .right {
   .small-head {
-    font-size: 13px;
+    font-size: 12px;
     span {
       font-size: 20px;
       transform: scaleX(-1);
@@ -218,10 +238,9 @@ main {
     margin-top: 24px;
     font-size: 13px;
     input {
-      margin-bottom: 32px;
       margin-top: 8px;
       display: block;
-      margin-bottom: 32px;
+      margin-bottom: 16px;
       width: 100%;
       padding: 16px 20px;
       border-radius: 4px;
@@ -261,7 +280,7 @@ main {
     }
 
     p {
-      font-size: 9px;
+      font-size: 12px;
       font-style: italic;
       color: #ff26b9;
       margin: 32px 0;
@@ -269,26 +288,51 @@ main {
 
     .agree-grid {
       display: flex;
-      justify-content: center;
-      align-items: flex-start;
+      align-items: center;
 
       .agree {
         width: 20px;
         height: 20px;
-        margin: 2px 8px 0 0;
+        margin: 0 8px 0 0;
       }
+    }
+
+    .register-btn {
+      margin: 16px auto;
     }
   }
 }
 
 // Media Query for Ipad
 @media only screen and (min-width: 576px) {
+  main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+  }
+
+  .right {
+    form {
+      .register-btn {
+        width: 100%;
+      }
+    }
+  }
 }
 
 // Media Query for Laptop
 @media only screen and (min-width: 992px) {
   .head {
     display: none;
+  }
+
+  .head-2 {
+    display: block;
+    font-size: 32px;
+    font-family: $header-font;
+    color: $light-purple;
+    font-weight: 600;
+    margin: 32px 0;
   }
   .home-header {
     display: flex;
@@ -337,6 +381,40 @@ main {
     &:hover {
       transform: scale(1.2);
       transition: 0.5s;
+    }
+  }
+
+  main {
+    margin: 120px 100px 100px 100px;
+  }
+
+  .right {
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 32px 64px;
+
+    .small-head {
+      font-size: 14px;
+      span {
+        font-size: 30px;
+      }
+    }
+
+    .big-head {
+      font-size: 24px;
+    }
+
+    form {
+      .cat-grid {
+        display: grid;
+        grid-template-columns: 47.5% 47.5%;
+        gap: 5%;
+      }
+      .category-grid {
+        grid-template-columns: 47.5% 47.5%;
+        gap: 5%;
+      }
     }
   }
 }
