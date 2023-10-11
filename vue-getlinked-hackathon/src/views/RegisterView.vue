@@ -24,11 +24,20 @@
   </header>
 
   <main>
-    <section class="left">
+    <img
+      class="background-img"
+      src="/public/imgs/purple-1.png"
+      alt="background-img"
+    />
+    <img class="star star-1" src="/public/imgs/big-white-star.png" alt="star" />
+    <img class="star star-2" src="/public/imgs/star.png" alt="star" />
+    <img class="star star-3" src="/public/imgs/p-star.png" alt="star" />
+    <img class="star star-4" src="/public/imgs/p-star.png" alt="star" />
+    <section v-motion-slide-left class="left">
       <img src="/public/imgs/man-sit.png" alt="smart-boy" />
     </section>
 
-    <section class="right">
+    <section v-motion-slide-right class="right">
       <div class="head-2">Register</div>
       <div class="small-head">
         Be part of this movement! &nbsp; <span>🚶‍♂️🚶‍♀️</span>
@@ -215,9 +224,12 @@
 
 main {
   margin: 16px 32px 16px 32px;
+  position: relative;
 }
 
 .right {
+  position: relative;
+  z-index: 1;
   .small-head {
     font-size: 12px;
     span {
@@ -303,6 +315,56 @@ main {
   }
 }
 
+.background-img {
+  position: absolute;
+  top: 0px;
+  left: -100px;
+  opacity: 0.3;
+}
+
+// stars- start
+.star {
+  width: 15px;
+  height: auto;
+  position: absolute;
+}
+
+.star-1 {
+  top: 50px;
+  left: 0px;
+  animation: blink 0.5s infinite;
+}
+
+.star-2 {
+  top: 900px;
+  left: 200px;
+  animation: blink 2s infinite;
+}
+
+.star-3 {
+  top: 650px;
+  left: 50px;
+  animation: blink 1.5s infinite;
+}
+
+.star-4 {
+  top: -50px;
+  left: 170px;
+  animation: blink 1s infinite;
+}
+
+// stars- end
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
 // Media Query for Ipad
 @media only screen and (min-width: 576px) {
   main {
@@ -317,6 +379,12 @@ main {
         width: 100%;
       }
     }
+  }
+
+  .star-2 {
+    top: 500px;
+    left: 600px;
+    animation: blink 2s infinite;
   }
 }
 
@@ -416,6 +484,22 @@ main {
         gap: 5%;
       }
     }
+  }
+
+  .star {
+    width: 25px;
+  }
+
+  .star-4 {
+    top: 50px;
+    left: 1000px;
+    animation: blink 1s infinite;
+  }
+
+  .background-img {
+    top: 0px;
+    left: -100px;
+    width: 70%;
   }
 }
 </style>
