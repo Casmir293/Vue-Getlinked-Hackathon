@@ -6,10 +6,14 @@
         <img class="child" src="/public/imgs/success.png" alt="happy-child" />
       </div>
 
-      <p class="p1">Congratulations you have successfully Registered!</p>
+      <p class="p1">
+        Congratulations <br />
+        you have successfully Registered!
+      </p>
 
       <p class="p2">
-        Yes, it was easy and you did it! check your mail box for next step 😉
+        Yes, it was easy and you did it! <br />
+        check your mail box for next step 😉
       </p>
 
       <div class="register-btn"><a href="">Proceed</a></div>
@@ -41,8 +45,9 @@
 }
 
 p {
-  padding: 16px 48px;
+  padding: 16px 16px;
   text-align: center;
+  line-height: 1.5;
 }
 
 .p1 {
@@ -53,7 +58,7 @@ p {
 
 .register-btn {
   border-radius: 4px;
-  width: 172px;
+  width: 90%;
   height: 53px;
   background: $gradient;
   justify-content: center;
@@ -67,6 +72,13 @@ p {
     font-size: 16px;
     color: #fff;
     text-decoration: none;
+  }
+}
+
+// Media Query for Laptop
+@media only screen and (min-width: 992px) {
+  .p1 {
+    font-size: 20px;
   }
 }
 </style>

@@ -150,14 +150,27 @@
       </form>
     </section>
 
-    <div class="confirm">
-      <confirmation />
+    <div class="modal-overlay">
+      <div class="confirm">
+        <confirmation />
+      </div>
     </div>
   </main>
 </template>
 
 <script setup>
 import Confirmation from "../components/ConfirmationComp.vue";
+import { ref } from "vue";
+
+const isModalVisible = ref(false);
+
+const showModal = () => {
+  isModalVisible.value = true;
+};
+
+const closeModal = () => {
+  isModalVisible.value = false;
+};
 </script>
 
 <style lang="scss" scoped>
@@ -321,13 +334,27 @@ main {
   }
 }
 
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(21, 14, 40, 0.8);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .confirm {
-  position: absolute;
-  top: 1px;
+  width: 80%;
+  position: relative;
   border-radius: 5px;
   border: 1px solid #d434fe;
-  background: rgba(21, 14, 40, 0.95);
-  z-index: 2;
+  background: rgba(21, 14, 40, 0.8);
+  z-index: 3;
+  padding: 16px;
 }
 
 .background-img {
@@ -515,6 +542,23 @@ main {
     top: 0px;
     left: -100px;
     width: 70%;
+  }
+
+  //   .modal-overlay {
+  //   position: fixed;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background: rgba(21, 14, 40, 0.8);
+  //   z-index: 2;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  // }
+
+  .confirm {
+    width: 40%;
   }
 }
 </style>
