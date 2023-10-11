@@ -2,17 +2,17 @@
   <section class="confirmation">
     <section class="congrats">
       <div class="top">
-        <img src="" alt="check" />
-        <img src="" alt="happy-child" />
+        <img class="check" src="/public/imgs/list terms.svg" alt="check" />
+        <img class="child" src="/public/imgs/success.png" alt="happy-child" />
       </div>
 
-      <p>Congratulations you have successfully Registered!</p>
+      <p class="p1">Congratulations you have successfully Registered!</p>
 
-      <p>
+      <p class="p2">
         Yes, it was easy and you did it! check your mail box for next step 😉
       </p>
 
-      <div class="register-btn">Proceed</div>
+      <div class="register-btn"><a href="">Proceed</a></div>
     </section>
   </section>
 </template>
@@ -21,7 +21,52 @@
 
 <style lang="scss" scoped>
 @import "../assets/scss/variables";
-// .confirm {
-//   position: absolute;
-// }
+* {
+  background: transparent;
+}
+
+.top {
+  padding-top: 32px;
+  display: flex;
+  justify-content: center;
+  img {
+    display: inline;
+    width: 50%;
+  }
+
+  .check {
+    width: 30%;
+    margin-right: -60px;
+  }
+}
+
+p {
+  padding: 16px 48px;
+  text-align: center;
+}
+
+.p1 {
+  margin: auto;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.register-btn {
+  border-radius: 4px;
+  width: 172px;
+  height: 53px;
+  background: $gradient;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 30px auto;
+  color: #fff;
+  border: none;
+  a {
+    background-color: inherit;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+  }
+}
 </style>

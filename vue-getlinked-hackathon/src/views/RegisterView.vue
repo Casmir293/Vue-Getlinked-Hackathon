@@ -323,6 +323,11 @@ main {
 
 .confirm {
   position: absolute;
+  top: 1px;
+  border-radius: 5px;
+  border: 1px solid #d434fe;
+  background: rgba(21, 14, 40, 0.95);
+  z-index: 2;
 }
 
 .background-img {
