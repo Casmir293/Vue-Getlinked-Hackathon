@@ -149,10 +149,16 @@
         <button class="register-btn" type="submit">Submit</button>
       </form>
     </section>
+
+    <div class="confirm">
+      <confirmation />
+    </div>
   </main>
 </template>
 
-<script setup></script>
+<script setup>
+import Confirmation from "../components/ConfirmationComp.vue";
+</script>
 
 <style lang="scss" scoped>
 @import "../assets/scss/variables";
@@ -313,6 +319,10 @@ main {
       margin: 16px auto;
     }
   }
+}
+
+.confirm {
+  position: absolute;
 }
 
 .background-img {
