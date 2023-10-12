@@ -1,6 +1,6 @@
 # Pre-Hackathon Coding Challenge
 
-![Project Image](/img/sample-img.png)
+![Project Image](/public/imgs/sample-img.png)
 
 ## Overview
 
