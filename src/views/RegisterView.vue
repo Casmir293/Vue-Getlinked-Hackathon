@@ -149,6 +149,7 @@
             name="privacy_poclicy_accepted"
             value="false"
             required
+            v-model="privacy_poclicy_accepted"
           />
           <label for="privacy_poclicy_accepted">
             I agreed with the event terms and conditions and privacy
@@ -174,6 +175,7 @@
 import Confirmation from "../components/ConfirmationComp.vue";
 import { ref } from "vue";
 
+const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
 const isModalVisible = ref(false);
 const teamName = ref("");
 const phoneNumber = ref("");
@@ -181,14 +183,17 @@ const email = ref("");
 const projectTopic = ref("");
 const category = ref("");
 const groupSize = ref("");
+const privacy_poclicy_accepted = ref(false);
 
 const showModal = () => {
   if (
-    teamName.value.length > 1 &&
-    phoneNumber.value.length > 1 &&
-    projectTopic.value.length > 1 &&
-    category.value.length > 1 &&
-    groupSize.value.length > 1
+    teamName.value.length > 0 &&
+    phoneNumber.value.length > 0 &&
+    emailRegex.test(email.value) &&
+    projectTopic.value.length > 0 &&
+    category.value.length > 0 &&
+    groupSize.value.length > 0 &&
+    privacy_poclicy_accepted.value === true
   ) {
     isModalVisible.value = true;
   }
