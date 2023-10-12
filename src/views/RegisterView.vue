@@ -170,10 +170,6 @@ const isModalVisible = ref(false);
 const showModal = () => {
   isModalVisible.value = true;
 };
-
-// const closeModal = () => {
-//   isModalVisible.value = false;
-// };
 </script>
 
 <style lang="scss" scoped>
