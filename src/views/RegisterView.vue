@@ -59,6 +59,7 @@
               name="team_name"
               placeholder="Enter the name of your group"
               required
+              v-model="teamName"
             />
           </div>
 
@@ -70,6 +71,7 @@
               name="phone_number"
               placeholder="Enter your phone number"
               required
+              v-model="phoneNumber"
             />
           </div>
         </div>
@@ -84,6 +86,7 @@
               name="email"
               placeholder="Enter your email address"
               required
+              v-model="email"
             />
           </div>
 
@@ -95,6 +98,7 @@
               name="project_topic"
               placeholder="What is your group project topic"
               required
+              v-model="projectTopic"
             />
           </div>
         </div>
@@ -104,7 +108,7 @@
         <div class="category-grid">
           <div>
             <label for="category">Category</label> <br />
-            <select id="category" name="category" required>
+            <select id="category" name="category" required v-model="category">
               <option value="" selected disabled>Select your category</option>
               <option value="1">MOBILE</option>
               <option value="2">WEB</option>
@@ -114,7 +118,12 @@
 
           <div>
             <label for="group_size">Group Size</label> <br />
-            <select id="group_size" name="group_size" required>
+            <select
+              id="group_size"
+              name="group_size"
+              required
+              v-model="groupSize"
+            >
               <option value="" selected disabled>Select</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -166,9 +175,23 @@ import Confirmation from "../components/ConfirmationComp.vue";
 import { ref } from "vue";
 
 const isModalVisible = ref(false);
+const teamName = ref("");
+const phoneNumber = ref("");
+const email = ref("");
+const projectTopic = ref("");
+const category = ref("");
+const groupSize = ref("");
 
 const showModal = () => {
-  isModalVisible.value = true;
+  if (
+    teamName.value.length > 1 &&
+    phoneNumber.value.length > 1 &&
+    projectTopic.value.length > 1 &&
+    category.value.length > 1 &&
+    groupSize.value.length > 1
+  ) {
+    isModalVisible.value = true;
+  }
 };
 </script>
 
