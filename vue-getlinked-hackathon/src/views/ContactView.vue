@@ -158,6 +158,7 @@
         <form
           action="https://backend.getlinked.ai/hackathon/contact-form"
           method="post"
+          target="_blank"
         >
           <input
             type="text"
@@ -174,14 +175,24 @@
             placeholder="Message"
             required
           ></textarea>
-          <button type="submit" class="register-btn">Submit</button>
+          <button type="submit" class="register-btn" @click="submitted">
+            Submit
+          </button>
         </form>
       </div>
     </section>
   </main>
 </template>
 
-<script setup></script>
+<script setup>
+const submitted = () => {
+  alert("Your request has been submitted");
+
+  setTimeout(() => {
+    location.reload();
+  }, 0);
+};
+</script>
 
 <style lang="scss" scoped>
 @import "../assets/scss/variables";

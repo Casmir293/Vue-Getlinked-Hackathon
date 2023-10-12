@@ -48,6 +48,7 @@
       <form
         action="https://backend.getlinked.ai/hackathon/registration"
         method="post"
+        target="_blank"
       >
         <div class="cat-grid">
           <div>
@@ -146,11 +147,13 @@
           >
         </div>
 
-        <button class="register-btn" type="submit">Submit</button>
+        <button class="register-btn" type="submit" @click="showModal">
+          Submit
+        </button>
       </form>
     </section>
 
-    <div class="modal-overlay">
+    <div v-motion-pop v-if="isModalVisible" class="modal-overlay">
       <div class="confirm">
         <confirmation />
       </div>
@@ -168,9 +171,9 @@ const showModal = () => {
   isModalVisible.value = true;
 };
 
-const closeModal = () => {
-  isModalVisible.value = false;
-};
+// const closeModal = () => {
+//   isModalVisible.value = false;
+// };
 </script>
 
 <style lang="scss" scoped>
@@ -543,19 +546,6 @@ main {
     left: -100px;
     width: 70%;
   }
-
-  //   .modal-overlay {
-  //   position: fixed;
-  //   top: 0;
-  //   left: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   background: rgba(21, 14, 40, 0.8);
-  //   z-index: 2;
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  // }
 
   .confirm {
     width: 40%;

@@ -16,7 +16,7 @@
         check your mail box for next step 😉
       </p>
 
-      <div class="register-btn"><a href="">Proceed</a></div>
+      <div class="register-btn"><a href="">Back</a></div>
     </section>
   </section>
 </template>
