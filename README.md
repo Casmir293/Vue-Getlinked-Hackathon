@@ -4,7 +4,7 @@
 
 ## Overview
 
-Welcome to the Pre-Hackathon Coding Challenge project, a 5-day endeavor sponsored by getlinked.io. This project was developed using Vue.js, SCSS, and various Vue.js libraries, including Vue Router for navigation, Bootstrap for the accordion component, Vueuse/Motion for animations, and Vue Transition for transitions.
+Welcome to the Pre-Hackathon Coding Challenge project, a 5-day endeavor sponsored by getlinked.io. This project was developed using Vue.js, SCSS, and various Vue.js libraries, including Vue Router for navigation, Bootstrap for the accordion component, Vueuse/Motion for animations, and Vue Transition for transitions. Access this website at [getlinked.casmir.dev](https://getlinked.casmir.dev).
 
 ## Table of Contents
 
