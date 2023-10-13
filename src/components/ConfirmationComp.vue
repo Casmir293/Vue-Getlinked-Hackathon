@@ -2,8 +2,8 @@
   <section class="confirmation">
     <section class="congrats">
       <div class="top">
-        <img class="check" src="/public/imgs/list terms.svg" alt="check" />
-        <img class="child" src="/public/imgs/success.png" alt="happy-child" />
+        <img class="check" src="/imgs/list terms.svg" alt="check" />
+        <img class="child" src="/imgs/success.png" alt="happy-child" />
       </div>
 
       <p class="p1">

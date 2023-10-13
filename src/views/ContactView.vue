@@ -56,15 +56,11 @@
   </header>
 
   <main>
-    <img
-      class="background-img"
-      src="/public/imgs/purple-1.png"
-      alt="background-img"
-    />
-    <img class="star star-1" src="/public/imgs/big-white-star.png" alt="star" />
-    <img class="star star-2" src="/public/imgs/star.png" alt="star" />
-    <img class="star star-3" src="/public/imgs/p-star.png" alt="star" />
-    <img class="star star-4" src="/public/imgs/p-star.png" alt="star" />
+    <img class="background-img" src="/imgs/purple-1.png" alt="background-img" />
+    <img class="star star-1" src="/imgs/big-white-star.png" alt="star" />
+    <img class="star star-2" src="/imgs/star.png" alt="star" />
+    <img class="star star-3" src="/imgs/p-star.png" alt="star" />
+    <img class="star star-4" src="/imgs/p-star.png" alt="star" />
     <!-- Mobile -->
     <section v-motion-slide-bottom class="mobile-wrapper">
       <div class="topic">
@@ -98,16 +94,16 @@
       <div class="social-media">
         <span>Share on</span> <br />
         <a href="https://www.instagram.com/getlinked.ai/" target="_blank"
-          ><img src="/public/imgs/mdi_instagram.svg" alt="IG"
+          ><img src="/imgs/mdi_instagram.svg" alt="IG"
         /></a>
         <a href="https://twitter.com/getlinkedai" target="_blank"
-          ><img src="/public/imgs/Vector.svg" alt="twitter"
+          ><img src="/imgs/Vector.svg" alt="twitter"
         /></a>
         <a href="https://www.facebook.com/getLinkedai" target="_blank"
-          ><img src="/public/imgs/Vector (1).svg" alt="facebook"
+          ><img src="/imgs/Vector (1).svg" alt="facebook"
         /></a>
         <a href="https://www.linkedin.com/company/getlinked-ai/" target="_blank"
-          ><img src="/public/imgs/ri_linkedin-fill.svg" alt="linkedin"
+          ><img src="/imgs/ri_linkedin-fill.svg" alt="linkedin"
         /></a>
       </div>
     </section>
@@ -133,18 +129,18 @@
         <div class="social-media">
           <span>Share on</span> <br />
           <a href="https://www.instagram.com/getlinked.ai/" target="_blank"
-            ><img src="/public/imgs/mdi_instagram.svg" alt="IG"
+            ><img src="/imgs/mdi_instagram.svg" alt="IG"
           /></a>
           <a href="https://twitter.com/getlinkedai" target="_blank"
-            ><img src="/public/imgs/Vector.svg" alt="twitter"
+            ><img src="/imgs/Vector.svg" alt="twitter"
           /></a>
           <a href="https://www.facebook.com/getLinkedai" target="_blank"
-            ><img src="/public/imgs/Vector (1).svg" alt="facebook"
+            ><img src="/imgs/Vector (1).svg" alt="facebook"
           /></a>
           <a
             href="https://www.linkedin.com/company/getlinked-ai/"
             target="_blank"
-            ><img src="/public/imgs/ri_linkedin-fill.svg" alt="linkedin"
+            ><img src="/imgs/ri_linkedin-fill.svg" alt="linkedin"
           /></a>
         </div>
       </div>

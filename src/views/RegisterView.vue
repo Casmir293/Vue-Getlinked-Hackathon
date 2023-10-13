@@ -24,17 +24,13 @@
   </header>
 
   <main>
-    <img
-      class="background-img"
-      src="/public/imgs/purple-1.png"
-      alt="background-img"
-    />
-    <img class="star star-1" src="/public/imgs/big-white-star.png" alt="star" />
-    <img class="star star-2" src="/public/imgs/star.png" alt="star" />
-    <img class="star star-3" src="/public/imgs/p-star.png" alt="star" />
-    <img class="star star-4" src="/public/imgs/p-star.png" alt="star" />
+    <img class="background-img" src="/imgs/purple-1.png" alt="background-img" />
+    <img class="star star-1" src="/imgs/big-white-star.png" alt="star" />
+    <img class="star star-2" src="/imgs/star.png" alt="star" />
+    <img class="star star-3" src="/imgs/p-star.png" alt="star" />
+    <img class="star star-4" src="/imgs/p-star.png" alt="star" />
     <section v-motion-slide-left class="left">
-      <img src="/public/imgs/man-sit.png" alt="smart-boy" />
+      <img src="/imgs/man-sit.png" alt="smart-boy" />
     </section>
 
     <section v-motion-slide-right class="right">

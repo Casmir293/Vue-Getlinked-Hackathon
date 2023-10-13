@@ -28,25 +28,21 @@
       <div class="main-feat-left">
         <img
           class="background-img"
-          src="/public/imgs/purple-1.png"
+          src="/imgs/purple-1.png"
           alt="background-img"
         />
-        <img
-          class="star star-1"
-          src="/public/imgs/big-white-star.png"
-          alt="star"
-        />
-        <img class="star star-2" src="/public/imgs/star.png" alt="star" />
-        <img class="star star-3" src="/public/imgs/star.png" alt="star" />
+        <img class="star star-1" src="/imgs/big-white-star.png" alt="star" />
+        <img class="star star-2" src="/imgs/star.png" alt="star" />
+        <img class="star star-3" src="/imgs/star.png" alt="star" />
         <div class="getlinked">
           getlinked Te<span class="tech">
-            <img class="idea" src="/public/imgs/idea.png" alt="idea" />c</span
+            <img class="idea" src="/imgs/idea.png" alt="idea" />c</span
           >h
         </div>
         <div class="hackathon">
           Hackathon <span>1.0</span
-          ><img src="/public/imgs/chain.png" alt="chain" /><img
-            src="/public/imgs/spark.png"
+          ><img src="/imgs/chain.png" alt="chain" /><img
+            src="/imgs/spark.png"
             alt="spark"
           />
         </div>
@@ -70,11 +66,11 @@
       <div v-motion-roll-bottom class="main-feat-right">
         <img
           class="background-img"
-          src="/public/imgs/purple-1.png"
+          src="/imgs/purple-1.png"
           alt="background-img"
         />
-        <img class="boy-img" src="/public/imgs/smart-boy.png" alt="young-boy" />
-        <img class="animate-img" src="/public/imgs/lights.png" alt="object" />
+        <img class="boy-img" src="/imgs/smart-boy.png" alt="young-boy" />
+        <img class="animate-img" src="/imgs/lights.png" alt="object" />
       </div>
     </div>
   </section>

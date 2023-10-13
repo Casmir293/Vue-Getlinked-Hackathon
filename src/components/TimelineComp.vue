@@ -1,8 +1,8 @@
 <template>
   <section class="timeline" id="timeline">
-    <img class="star star-1" src="/public/imgs/p-star.png" alt="star" />
-    <img class="star star-2" src="/public/imgs/big-white-star.png" alt="star" />
-    <img class="star star-3" src="/public/imgs/star.png" alt="star" />
+    <img class="star star-1" src="/imgs/p-star.png" alt="star" />
+    <img class="star star-2" src="/imgs/big-white-star.png" alt="star" />
+    <img class="star star-3" src="/imgs/star.png" alt="star" />
     <div class="timeline-head">
       <p class="timeline-subhead">Timeline</p>
       <p class="timeline-subbody">

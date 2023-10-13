@@ -1,7 +1,7 @@
 <template>
   <section class="faq" id="faq">
     <section class="faq-top">
-      <img class="star star-1" src="/public/imgs/p-star.png" alt="star" />
+      <img class="star star-1" src="/imgs/p-star.png" alt="star" />
       <p class="faq-heading">Frequently Ask <span>Question</span></p>
       <p class="faq-paragraph">
         We got answers to the questions that you might want to ask about
@@ -154,20 +154,12 @@
       </div>
     </section>
     <section class="faq-bottom">
-      <img class="star star-2" src="/public/imgs/star.png" alt="star" />
-      <img class="star star-3" src="/public/imgs/p-star.png" alt="star" />
-      <img class="star star-4" src="/public/imgs/p-star.png" alt="star" />
-      <img
-        class="star star-5"
-        src="/public/imgs/big-white-star.png"
-        alt="star"
-      />
+      <img class="star star-2" src="/imgs/star.png" alt="star" />
+      <img class="star star-3" src="/imgs/p-star.png" alt="star" />
+      <img class="star star-4" src="/imgs/p-star.png" alt="star" />
+      <img class="star star-5" src="/imgs/big-white-star.png" alt="star" />
       <div class="question-mark">?<span>?</span>?</div>
-      <img
-        class="think-img"
-        src="/public/imgs/thinking-man.png"
-        alt="thinking"
-      />
+      <img class="think-img" src="/imgs/thinking-man.png" alt="thinking" />
     </section>
   </section>
 </template>

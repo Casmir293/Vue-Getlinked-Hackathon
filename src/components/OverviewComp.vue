@@ -1,14 +1,10 @@
 <template>
   <section class="details" id="overview">
     <section class="detail-flex detail-flex-1">
-      <img class="star star-1" src="/public/imgs/p-star.png" alt="star" />
-      <img class="star star-2" src="/public/imgs/p-star.png" alt="star" />
-      <img
-        v-motion-roll-left
-        src="/public/imgs/big-idea.png"
-        alt="The Big Idea"
-      />
-      <img class="arrow" src="/public/imgs/arrow.png" alt="arrow" />
+      <img class="star star-1" src="/imgs/p-star.png" alt="star" />
+      <img class="star star-2" src="/imgs/p-star.png" alt="star" />
+      <img v-motion-roll-left src="/imgs/big-idea.png" alt="The Big Idea" />
+      <img class="arrow" src="/imgs/arrow.png" alt="arrow" />
       <div v-motion-roll-right>
         <p class="subtopic subtopic-1">
           Introduction to getlinked <span>tech Hackathon 1.0</span>
@@ -25,27 +21,11 @@
     </section>
 
     <section class="detail-flex detail-flex-2">
-      <img
-        class="background-img"
-        src="/public/imgs/purple-1.png"
-        alt="background"
-      />
-      <img
-        class="background-img-2"
-        src="/public/imgs/purple-1.png"
-        alt="background"
-      />
-      <img
-        class="star star-3"
-        src="/public/imgs/big-white-star.png"
-        alt="star"
-      />
-      <img class="star star-4" src="/public/imgs/star.png" alt="star" />
-      <img
-        class="star star-5"
-        src="/public/imgs/big-white-star.png"
-        alt="star"
-      />
+      <img class="background-img" src="/imgs/purple-1.png" alt="background" />
+      <img class="background-img-2" src="/imgs/purple-1.png" alt="background" />
+      <img class="star star-3" src="/imgs/big-white-star.png" alt="star" />
+      <img class="star star-4" src="/imgs/star.png" alt="star" />
+      <img class="star star-5" src="/imgs/big-white-star.png" alt="star" />
       <div v-motion-roll-left class="content-2">
         <p class="subtopic">Rules and <span>Guidelines</span></p>
         <p class="write-ups write-ups-2">
@@ -59,34 +39,22 @@
       </div>
       <img
         v-motion-roll-right
-        src="/public/imgs/sitting-lady.png"
+        src="/imgs/sitting-lady.png"
         alt="Sitting Lady"
         class="lady-img"
       />
     </section>
 
     <section class="detail-flex detail-flex-3">
-      <img
-        class="background-img"
-        src="/public/imgs/purple-1.png"
-        alt="background"
-      />
-      <img
-        class="background-img-2"
-        src="/public/imgs/purple-1.png"
-        alt="background"
-      />
-      <img class="star star-6" src="/public/imgs/p-star.png" alt="star" />
-      <img class="star star-7" src="/public/imgs/star.png" alt="star" />
-      <img
-        class="star star-8"
-        src="/public/imgs/big-white-star.png"
-        alt="star"
-      />
+      <img class="background-img" src="/imgs/purple-1.png" alt="background" />
+      <img class="background-img-2" src="/imgs/purple-1.png" alt="background" />
+      <img class="star star-6" src="/imgs/p-star.png" alt="star" />
+      <img class="star star-7" src="/imgs/star.png" alt="star" />
+      <img class="star star-8" src="/imgs/big-white-star.png" alt="star" />
       <img
         v-motion-roll-visible-once-left
         class="detail-img-3"
-        src="/public/imgs/team.png"
+        src="/imgs/team.png"
         alt="Team Work"
       />
       <div class="judging">

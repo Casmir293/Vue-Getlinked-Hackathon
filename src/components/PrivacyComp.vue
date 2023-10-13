@@ -1,17 +1,13 @@
 <template>
   <section class="privacy" id="privacy">
-    <img
-      class="background-img"
-      src="/public/imgs/purple-1.png"
-      alt="background-img"
-    />
-    <img class="star star-1" src="/public/imgs/p-star.png" alt="star" />
-    <img class="star star-2" src="/public/imgs/p-star.png" alt="star" />
-    <img class="star star-3" src="/public/imgs/p-star.png" alt="star" />
-    <img class="star star-4" src="/public/imgs/big-white-star.png" alt="star" />
-    <img class="star star-5" src="/public/imgs/big-white-star.png" alt="star" />
-    <img class="star star-6" src="/public/imgs/star.png" alt="star" />
-    <img class="star star-7" src="/public/imgs/star.png" alt="star" />
+    <img class="background-img" src="/imgs/purple-1.png" alt="background-img" />
+    <img class="star star-1" src="/imgs/p-star.png" alt="star" />
+    <img class="star star-2" src="/imgs/p-star.png" alt="star" />
+    <img class="star star-3" src="/imgs/p-star.png" alt="star" />
+    <img class="star star-4" src="/imgs/big-white-star.png" alt="star" />
+    <img class="star star-5" src="/imgs/big-white-star.png" alt="star" />
+    <img class="star star-6" src="/imgs/star.png" alt="star" />
+    <img class="star star-7" src="/imgs/star.png" alt="star" />
     <section class="privacy-writeup">
       <div class="privacy-head">Privacy Policy and <span>Terms</span></div>
       <div class="privacy-body">
@@ -35,14 +31,14 @@
         </div>
         <div class="cont-3">
           <div>
-            <img src="/public/imgs/list terms.svg" alt="list" />
+            <img src="/imgs/list terms.svg" alt="list" />
             <p>
               The Standard License grants you a non-exclusive right to navigate
               and register for our event
             </p>
           </div>
           <div>
-            <img src="/public/imgs/list terms.svg" alt="list" />
+            <img src="/imgs/list terms.svg" alt="list" />
             <p>
               You are licensed to use the item available at any free source
               sites, for your project developement
@@ -80,7 +76,7 @@
         </defs>
       </svg>
       <div>
-        <img src="/public/imgs/privacy.png" alt="privacy" />
+        <img src="/imgs/privacy.png" alt="privacy" />
       </div>
     </section>
   </section>
