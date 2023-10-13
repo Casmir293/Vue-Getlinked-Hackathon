@@ -2,7 +2,7 @@
   <section class="confirmation">
     <section class="congrats">
       <div class="top">
-        <img class="check" src="/imgs/list terms.svg" alt="check" />
+        <img class="check" src="/imgs/successful.png" alt="check" />
         <img class="child" src="/imgs/success.png" alt="happy-child" />
       </div>
 
@@ -39,8 +39,8 @@
   }
 
   .check {
-    width: 30%;
-    margin-right: -60px;
+    width: 50%;
+    margin-right: -100px;
   }
 }
 

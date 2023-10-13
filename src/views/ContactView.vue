@@ -129,18 +129,18 @@
         <div class="social-media">
           <span>Share on</span> <br />
           <a href="https://www.instagram.com/getlinked.ai/" target="_blank"
-            ><img src="/imgs/mdi_instagram.svg" alt="IG"
+            ><img src="/imgs/mdi_instagram.png" alt="IG"
           /></a>
           <a href="https://twitter.com/getlinkedai" target="_blank"
-            ><img src="/imgs/Vector.svg" alt="twitter"
+            ><img src="/imgs/Vector.png" alt="twitter"
           /></a>
           <a href="https://www.facebook.com/getLinkedai" target="_blank"
-            ><img src="/imgs/Vector (1).svg" alt="facebook"
+            ><img src="/imgs/Vector (1).png" alt="facebook"
           /></a>
           <a
             href="https://www.linkedin.com/company/getlinked-ai/"
             target="_blank"
-            ><img src="/imgs/ri_linkedin-fill.svg" alt="linkedin"
+            ><img src="/imgs/ri_linkedin-fill.png" alt="linkedin"
           /></a>
         </div>
       </div>
@@ -320,8 +320,8 @@ svg {
     img {
       display: inline;
       margin: 8px;
-      width: 15px;
-      height: 15px;
+      width: auto;
+      height: auto;
     }
   }
 }
@@ -484,8 +484,8 @@ main {
       img {
         display: inline;
         margin: 8px;
-        width: 15px;
-        height: 15px;
+        width: auto;
+        height: auto;
       }
     }
   }

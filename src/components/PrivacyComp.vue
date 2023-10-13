@@ -31,14 +31,14 @@
         </div>
         <div class="cont-3">
           <div>
-            <img src="/imgs/list terms.svg" alt="list" />
+            <img src="/imgs/list terms.png" alt="list" />
             <p>
               The Standard License grants you a non-exclusive right to navigate
               and register for our event
             </p>
           </div>
           <div>
-            <img src="/imgs/list terms.svg" alt="list" />
+            <img src="/imgs/list terms.png" alt="list" />
             <p>
               You are licensed to use the item available at any free source
               sites, for your project developement
