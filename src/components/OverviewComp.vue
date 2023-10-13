@@ -21,11 +21,31 @@
     </section>
 
     <section class="detail-flex detail-flex-2">
-      <img class="background-img" src="/imgs/purple-1.png" alt="background" />
-      <img class="background-img-2" src="/imgs/purple-1.png" alt="background" />
-      <img class="star star-3" src="/imgs/big-white-star.png" alt="star" />
-      <img class="star star-4" src="/imgs/star.png" alt="star" />
-      <img class="star star-5" src="/imgs/big-white-star.png" alt="star" />
+      <img
+        loading="lazy"
+        class="background-img"
+        src="/imgs/purple-1.png"
+        alt="background"
+      />
+      <img
+        loading="lazy"
+        class="background-img-2"
+        src="/imgs/purple-1.png"
+        alt="background"
+      />
+      <img
+        loading="lazy"
+        class="star star-3"
+        src="/imgs/big-white-star.png"
+        alt="star"
+      />
+      <img loading="lazy" class="star star-4" src="/imgs/star.png" alt="star" />
+      <img
+        loading="lazy"
+        class="star star-5"
+        src="/imgs/big-white-star.png"
+        alt="star"
+      />
       <div v-motion-roll-left class="content-2">
         <p class="subtopic">Rules and <span>Guidelines</span></p>
         <p class="write-ups write-ups-2">
@@ -38,6 +58,7 @@
         </p>
       </div>
       <img
+        loading="lazy"
         v-motion-roll-right
         src="/imgs/sitting-lady.png"
         alt="Sitting Lady"
@@ -46,12 +67,33 @@
     </section>
 
     <section class="detail-flex detail-flex-3">
-      <img class="background-img" src="/imgs/purple-1.png" alt="background" />
-      <img class="background-img-2" src="/imgs/purple-1.png" alt="background" />
-      <img class="star star-6" src="/imgs/p-star.png" alt="star" />
-      <img class="star star-7" src="/imgs/star.png" alt="star" />
-      <img class="star star-8" src="/imgs/big-white-star.png" alt="star" />
       <img
+        loading="lazy"
+        class="background-img"
+        src="/imgs/purple-1.png"
+        alt="background"
+      />
+      <img
+        loading="lazy"
+        class="background-img-2"
+        src="/imgs/purple-1.png"
+        alt="background"
+      />
+      <img
+        loading="lazy"
+        class="star star-6"
+        src="/imgs/p-star.png"
+        alt="star"
+      />
+      <img loading="lazy" class="star star-7" src="/imgs/star.png" alt="star" />
+      <img
+        loading="lazy"
+        class="star star-8"
+        src="/imgs/big-white-star.png"
+        alt="star"
+      />
+      <img
+        loading="lazy"
         v-motion-roll-visible-once-left
         class="detail-img-3"
         src="/imgs/team.png"

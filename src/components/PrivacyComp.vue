@@ -1,13 +1,28 @@
 <template>
   <section class="privacy" id="privacy">
-    <img class="background-img" src="/imgs/purple-1.png" alt="background-img" />
-    <img class="star star-1" src="/imgs/p-star.png" alt="star" />
-    <img class="star star-2" src="/imgs/p-star.png" alt="star" />
-    <img class="star star-3" src="/imgs/p-star.png" alt="star" />
-    <img class="star star-4" src="/imgs/big-white-star.png" alt="star" />
-    <img class="star star-5" src="/imgs/big-white-star.png" alt="star" />
-    <img class="star star-6" src="/imgs/star.png" alt="star" />
-    <img class="star star-7" src="/imgs/star.png" alt="star" />
+    <img
+      loading="lazy"
+      class="background-img"
+      src="/imgs/purple-1.png"
+      alt="background-img"
+    />
+    <img loading="lazy" class="star star-1" src="/imgs/p-star.png" alt="star" />
+    <img loading="lazy" class="star star-2" src="/imgs/p-star.png" alt="star" />
+    <img loading="lazy" class="star star-3" src="/imgs/p-star.png" alt="star" />
+    <img
+      loading="lazy"
+      class="star star-4"
+      src="/imgs/big-white-star.png"
+      alt="star"
+    />
+    <img
+      loading="lazy"
+      class="star star-5"
+      src="/imgs/big-white-star.png"
+      alt="star"
+    />
+    <img loading="lazy" class="star star-6" src="/imgs/star.png" alt="star" />
+    <img loading="lazy" class="star star-7" src="/imgs/star.png" alt="star" />
     <section class="privacy-writeup">
       <div class="privacy-head">Privacy Policy and <span>Terms</span></div>
       <div class="privacy-body">
@@ -31,14 +46,14 @@
         </div>
         <div class="cont-3">
           <div>
-            <img src="/imgs/list-terms.png" alt="list" />
+            <img loading="lazy" src="/imgs/list-terms.png" alt="list" />
             <p>
               The Standard License grants you a non-exclusive right to navigate
               and register for our event
             </p>
           </div>
           <div>
-            <img src="/imgs/list-terms.png" alt="list" />
+            <img loading="lazy" src="/imgs/list-terms.png" alt="list" />
             <p>
               You are licensed to use the item available at any free source
               sites, for your project developement
@@ -76,7 +91,7 @@
         </defs>
       </svg>
       <div>
-        <img src="/imgs/privacy.png" alt="privacy" />
+        <img loading="lazy" src="/imgs/privacy.png" alt="privacy" />
       </div>
     </section>
   </section>

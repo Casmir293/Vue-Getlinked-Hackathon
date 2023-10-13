@@ -1,16 +1,23 @@
 <template>
   <section class="prizes">
-    <img class="star star-1" src="/imgs/p-star.png" alt="star" />
-    <img class="star star-2" src="/imgs/p-star.png" alt="star" /><img
+    <img loading="lazy" class="star star-1" src="/imgs/p-star.png" alt="star" />
+    <img
+      loading="lazy"
+      class="star star-2"
+      src="/imgs/p-star.png"
+      alt="star"
+    /><img
+      loading="lazy"
       class="star star-3"
       src="/imgs/big-white-star.png"
       alt="star"
     />
-    <img class="star star-4" src="/imgs/big-white-star.png" alt="star" /><img
-      class="star star-5"
-      src="/imgs/star.png"
+    <img
+      loading="lazy"
+      class="star star-4"
+      src="/imgs/big-white-star.png"
       alt="star"
-    />
+    /><img loading="lazy" class="star star-5" src="/imgs/star.png" alt="star" />
 
     <section class="prizes-top">
       <p class="prize-head">Prizes and <span>Rewards</span></p>
@@ -21,11 +28,16 @@
 
     <section v-motion-pop-visible-once class="prize-bottom">
       <div class="trophy-img">
-        <img v-motion-fade-visible-once src="/imgs/trophy.png" alt="Trophy" />
+        <img
+          loading="lazy"
+          v-motion-fade-visible-once
+          src="/imgs/trophy.png"
+          alt="Trophy"
+        />
       </div>
       <div class="medal-img">
         <div class="silver">
-          <img src="/imgs/silver.png" alt="silver" />
+          <img loading="lazy" src="/imgs/silver.png" alt="silver" />
           <div class="small">
             <b>2nd</b> <br />
             Runner <br />
@@ -33,7 +45,7 @@
           </div>
         </div>
         <div class="gold">
-          <img src="/imgs/gold.png" alt="gold" />
+          <img loading="lazy" src="/imgs/gold.png" alt="gold" />
 
           <div class="large">
             <b>1st</b> <br />
@@ -42,7 +54,7 @@
           </div>
         </div>
         <div class="bronze">
-          <img src="/imgs/bronze.png" alt="bronze" />
+          <img loading="lazy" src="/imgs/bronze.png" alt="bronze" />
 
           <div class="small">
             <b>3rd</b> <br />

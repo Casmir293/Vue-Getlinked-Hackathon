@@ -1,10 +1,20 @@
 <template>
   <section>
-    <img class="background-img" src="/imgs/purple-1.png" alt="background-img" />
-    <img class="star star-1" src="/imgs/big-white-star.png" alt="star" />
-    <img class="star star-2" src="/imgs/star.png" alt="star" />
-    <img class="star star-3" src="/imgs/p-star.png" alt="star" />
-    <img class="star star-4" src="/imgs/p-star.png" alt="star" />
+    <img
+      loading="lazy"
+      class="background-img"
+      src="/imgs/purple-1.png"
+      alt="background-img"
+    />
+    <img
+      loading="lazy"
+      class="star star-1"
+      src="/imgs/big-white-star.png"
+      alt="star"
+    />
+    <img loading="lazy" class="star star-2" src="/imgs/star.png" alt="star" />
+    <img loading="lazy" class="star star-3" src="/imgs/p-star.png" alt="star" />
+    <img loading="lazy" class="star star-4" src="/imgs/p-star.png" alt="star" />
     <div>
       <h2>404 ERROR</h2>
       <p>Sorry, the page was not found</p>
