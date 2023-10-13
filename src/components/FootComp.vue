@@ -37,7 +37,7 @@
             ><img src="/imgs/Vector.png" alt="twitter"
           /></a>
           <a href="https://www.facebook.com/getLinkedai" target="_blank"
-            ><img src="/imgs/Vector (1).png" alt="facebook"
+            ><img src="/imgs/vector-fbk.png" alt="facebook"
           /></a>
           <a
             href="https://www.linkedin.com/company/getlinked-ai/"
@@ -54,7 +54,7 @@
           >
         </div>
         <div class="address">
-          <div><img src="/imgs/Vector (2).png" alt="address" /></div>
+          <div><img src="/imgs/address-logo.png" alt="address" /></div>
           <p>
             <a
               href="https://www.google.com/maps/place/27+Alara+St,+Sabo+yaba+101245,+Lagos/@6.5077727,3.3818753,17z/data=!3m1!4b1!4m6!3m5!1s0x103b8cf3fae871f1:0x33fc1ca3c387cf64!8m2!3d6.5077674!4d3.3844502!16s%2Fg%2F11h2dm_gnm?entry=ttu"
