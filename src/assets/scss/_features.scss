@@ -109,6 +109,8 @@
     align-items: center;
     display: flex;
     margin: 16px auto;
+    position: relative;
+    z-index: 1;
     a {
       background-color: inherit;
       font-size: 14px;
