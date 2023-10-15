@@ -2,18 +2,8 @@
   <section class="confirmation">
     <section class="congrats">
       <div class="top">
-        <img
-          loading="lazy"
-          class="check"
-          src="/imgs/successful.png"
-          alt="check"
-        />
-        <img
-          loading="lazy"
-          class="child"
-          src="/imgs/success.png"
-          alt="happy-child"
-        />
+        <img class="check" src="/imgs/successful.png" alt="check" />
+        <img class="child" src="/imgs/success.png" alt="happy-child" />
       </div>
 
       <p class="p1">
