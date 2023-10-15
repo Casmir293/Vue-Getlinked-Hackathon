@@ -56,21 +56,11 @@
   </header>
 
   <main>
-    <img
-      loading="lazy"
-      class="background-img"
-      src="/imgs/purple-1.png"
-      alt="background-img"
-    />
-    <img
-      loading="lazy"
-      class="star star-1"
-      src="/imgs/big-white-star.png"
-      alt="star"
-    />
-    <img loading="lazy" class="star star-2" src="/imgs/star.png" alt="star" />
-    <img loading="lazy" class="star star-3" src="/imgs/p-star.png" alt="star" />
-    <img loading="lazy" class="star star-4" src="/imgs/p-star.png" alt="star" />
+    <img class="background-img" src="/imgs/purple-1.png" alt="background-img" />
+    <img class="star star-1" src="/imgs/big-white-star.png" alt="star" />
+    <img class="star star-2" src="/imgs/star.png" alt="star" />
+    <img class="star star-3" src="/imgs/p-star.png" alt="star" />
+    <img class="star star-4" src="/imgs/p-star.png" alt="star" />
     <!-- Mobile -->
     <section v-motion-slide-bottom class="mobile-wrapper">
       <div class="topic">
@@ -104,16 +94,16 @@
       <div class="social-media">
         <span>Share on</span> <br />
         <a href="https://www.instagram.com/getlinked.ai/" target="_blank"
-          ><img loading="lazy" src="/imgs/mdi_instagram.png" alt="IG"
+          ><img src="/imgs/mdi_instagram.png" alt="IG"
         /></a>
         <a href="https://twitter.com/getlinkedai" target="_blank"
-          ><img loading="lazy" src="/imgs/Vector.png" alt="twitter"
+          ><img src="/imgs/Vector.png" alt="twitter"
         /></a>
         <a href="https://www.facebook.com/getLinkedai" target="_blank"
-          ><img loading="lazy" src="/imgs/vector-fbk.png" alt="facebook"
+          ><img src="/imgs/vector-fbk.png" alt="facebook"
         /></a>
         <a href="https://www.linkedin.com/company/getlinked-ai/" target="_blank"
-          ><img loading="lazy" src="/imgs/ri_linkedin-fill.png" alt="linkedin"
+          ><img src="/imgs/ri_linkedin-fill.png" alt="linkedin"
         /></a>
       </div>
     </section>
@@ -139,21 +129,18 @@
         <div class="social-media">
           <span>Share on</span> <br />
           <a href="https://www.instagram.com/getlinked.ai/" target="_blank"
-            ><img loading="lazy" src="/imgs/mdi_instagram.png" alt="IG"
+            ><img src="/imgs/mdi_instagram.png" alt="IG"
           /></a>
           <a href="https://twitter.com/getlinkedai" target="_blank"
-            ><img loading="lazy" src="/imgs/Vector.png" alt="twitter"
+            ><img src="/imgs/Vector.png" alt="twitter"
           /></a>
           <a href="https://www.facebook.com/getLinkedai" target="_blank"
-            ><img loading="lazy" src="/imgs/vector-fbk.png" alt="facebook"
+            ><img src="/imgs/vector-fbk.png" alt="facebook"
           /></a>
           <a
             href="https://www.linkedin.com/company/getlinked-ai/"
             target="_blank"
-            ><img
-              loading="lazy"
-              src="/imgs/ri_linkedin-fill.png"
-              alt="linkedin"
+            ><img src="/imgs/ri_linkedin-fill.png" alt="linkedin"
           /></a>
         </div>
       </div>

@@ -36,14 +36,8 @@
   top: 0;
   right: 0;
   left: 0;
+  background: rgba(21, 14, 40, 0.99);
   border: 0.5px solid rgba(255, 255, 255, 0.04);
-  @supports (-webkit-backdrop-filter: blur(30px)) or
-    (backdrop-filter: blur(30px)) {
-    .mobile-menu {
-      -webkit-backdrop-filter: blur(30px);
-      backdrop-filter: blur(30px);
-    }
-  }
 
   .svg-container {
     position: relative;
@@ -61,9 +55,11 @@
 
   ul {
     margin-top: 120px;
+    background: transparent;
     li {
       list-style: none;
       margin-bottom: 20px;
+      background: transparent;
       a {
         text-decoration: none;
         color: #fff;
